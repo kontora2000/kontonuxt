@@ -9,6 +9,6 @@
 
 <script>
 export default {
-  name: 'logo'
+  name: 'SiteLogo',
 }
 </script>

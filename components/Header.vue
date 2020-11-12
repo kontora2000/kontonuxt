@@ -1,21 +1,19 @@
 <template>
-    <header>
-        <Logo />
-        <Navbar />
-    </header>
+  <header>
+    <site-logo />
+    <navbar />
+  </header>
 </template>
 
 <script>
-import Logo from '@/components/Logo'
+import SiteLogo from '@/components/SiteLogo'
 import Navbar from '@/components/Navbar'
-
-
 
 export default {
   name: 'Header',
   components: {
-    Logo,
-    Navbar
-  }
+    SiteLogo,
+    Navbar,
+  },
 }
 </script>

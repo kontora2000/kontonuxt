@@ -5,15 +5,17 @@
         Сделали
         <sup class="mainpage-section-header-sup section-header-sup">
           недавно разработанные
-          <br />решения
+          <br>решения
           <span class="mainpage-section-header-sup-span">*</span>
         </sup>
       </h1>
 
       <div class="work-cont work-cont-half">
-        <div class="work-pic-cont"></div>
+        <div class="work-pic-cont" />
         <div class="work-name-cont">
-          <div class="work-name">Сайт региональных новостей «КЧР Дэйли»</div>
+          <div class="work-name">
+            Сайт региональных новостей «КЧР Дэйли»
+          </div>
           <div class="work-site-link-cont">
             <a class="work-site-link" href="https://09daily.ru" target="_blank">
               <span class="link-underline-solid">09daily.ru</span>
@@ -23,16 +25,20 @@
       </div>
 
       <div class="work-cont work-cont-half">
-        <div class="work-pic-cont"></div>
+        <div class="work-pic-cont" />
         <div class="work-name-cont">
-          <div class="work-name">Принт для баллонов «Просто Г—А—За»</div>
+          <div class="work-name">
+            Принт для баллонов «Просто Г—А—За»
+          </div>
         </div>
       </div>
 
       <div class="work-cont work-cont-half">
-        <div class="work-pic-cont"></div>
+        <div class="work-pic-cont" />
         <div class="work-name-cont">
-          <div class="work-name">Сайт студии мебели «Princess»</div>
+          <div class="work-name">
+            Сайт студии мебели «Princess»
+          </div>
           <div class="work-site-link-cont">
             <a class="work-site-link" href="https://princess.furniture" target="_blank">
               <span class="link-underline-solid">princess.furniture</span>
@@ -42,9 +48,11 @@
       </div>
 
       <div class="work-cont work-cont-half">
-        <div class="work-pic-cont"></div>
+        <div class="work-pic-cont" />
         <div class="work-name-cont">
-          <div class="work-name">Сайт региональных новостей «Эльбрус.пресс»</div>
+          <div class="work-name">
+            Сайт региональных новостей «Эльбрус.пресс»
+          </div>
           <div class="work-site-link-cont">
             <a class="work-site-link" href="https://elbrus.press" target="_blank">
               <span class="link-underline-solid">elbrus.press</span>
@@ -60,10 +68,12 @@
             autoplay
             loop
             style="border-radius: 40px; margin-left: 1.6rem; width: calc(100% - 3.2rem);"
-          ></video>
+          />
         </div>
         <div class="work-name-cont">
-          <div class="work-name">Новогодняя анимация для&nbsp;инстаграма студии «Princess»</div>
+          <div class="work-name">
+            Новогодняя анимация для&nbsp;инстаграма студии «Princess»
+          </div>
           <div class="work-site-link-cont">
             <a class="work-site-link" href="https://instagram.com/princess_mebel" target="_blank">
               <span class="link-underline-solid">@princess_mebel</span>
@@ -81,11 +91,13 @@
             <img
               src="works/princess/logo/princess-logo.png"
               style="height: 32rem; margin-top: 6rem;"
-            />
+            >
           </picture>
         </div>
         <div class="work-name-cont">
-          <div class="work-name">Логотип студии эксклюзивной мебели «Princess»</div>
+          <div class="work-name">
+            Логотип студии эксклюзивной мебели «Princess»
+          </div>
         </div>
       </div>
 
@@ -99,11 +111,13 @@
               class="work-pic-img"
               style="width: calc(100% - 3.2rem); height: auto; margin-left: 1.6rem;"
               src="works/prostogaz/website/prostogaz-website.png"
-            />
+            >
           </picture>
         </div>
         <div class="work-name-cont">
-          <div class="work-name">Сайт «Просто Г—А—За»</div>
+          <div class="work-name">
+            Сайт «Просто Г—А—За»
+          </div>
           <div class="work-site-link-cont">
             <a class="work-site-link" href="https://prostogaz.com" target="_blank">
               <span class="link-underline-solid">prostogaz.com</span>
@@ -113,9 +127,11 @@
       </div>
 
       <div class="work-cont work-cont-half-high">
-        <div class="work-pic-cont"></div>
+        <div class="work-pic-cont" />
         <div class="work-name-cont">
-          <div class="work-name">Сайт «Нескучного сада»</div>
+          <div class="work-name">
+            Сайт «Нескучного сада»
+          </div>
           <div class="work-site-link-cont">
             <a class="work-site-link" href="https://n-sad.com" target="_blank">
               <span class="link-underline-solid">n-sad.com</span>
@@ -125,9 +141,11 @@
       </div>
 
       <div class="work-cont work-cont-half">
-        <div class="work-pic-cont"></div>
+        <div class="work-pic-cont" />
         <div class="work-name-cont">
-          <div class="work-name">Сайт газеты «День республики»</div>
+          <div class="work-name">
+            Сайт газеты «День республики»
+          </div>
           <div class="work-site-link-cont">
             <a class="work-site-link" href="https://denresp.ru" target="_blank">
               <span class="link-underline-solid">denresp.ru</span>
@@ -137,13 +155,15 @@
       </div>
     </div>
     <div class="button-showmore-wrapper">
-      <button class="button-showmore">Ещё работы</button>
+      <button class="button-showmore">
+        Ещё работы
+      </button>
     </div>
   </section>
 </template>
 
 <script>
 export default {
-  name: 'works'
+  name: 'Works',
 }
 </script>

@@ -1,43 +1,24 @@
 <template>
   <section class="we-design">
     <div class="mainpage-section-header-wrapper">
-      <h1 class="mainpage-section-header">Делаем</h1>
+      <h1 class="mainpage-section-header">
+        Делаем
+      </h1>
     </div>
     <div class="nav-main">
       <ul class="nav-main-ul">
-        <li class="nav-main-link-wrapper">
-          <a class="nav-main-link" href="#">
-            <span class="link-underline-solid">Айдентику</span>
-          </a>
-        </li>
-        <li class="nav-main-link-wrapper">
-          <a class="nav-main-link" href="#">
-            <span class="link-underline-solid">Сайты</span>
-          </a>
-        </li>
-        <li class="nav-main-link-wrapper">
-          <a class="nav-main-link" href="#">
-            <span class="link-underline-solid">Приложухи</span>
-          </a>
-        </li>
-        <li class="nav-main-link-wrapper">
-          <a class="nav-main-link" href="#">
-            <span class="link-underline-solid">Рекламу</span>
-          </a>
-        </li>
-        <li class="nav-main-link-wrapper">
-          и&nbsp;
-          <a class="nav-main-link" href="#">
-            <span class="link-underline-solid">контент в&nbsp;соцсети</span>
-          </a>
-        </li>
+        <navbar-link>Айдентику</navbar-link>
+        <navbar-link>Сайты</navbar-link>
+        <navbar-link>Приложения</navbar-link>
+        <navbar-link>Рекламу</navbar-link>
+        <navbar-link>контент в&nbsp;соцсети</navbar-link>
       </ul>
     </div>
     <div class="button-buy-design-wrapper">
       <button class="button-buy-design">
         <span class="button-buy-design-sign">
           Купить
-          <br />дизайн!
+          <br>дизайн!
         </span>
       </button>
     </div>
@@ -45,7 +26,12 @@
 </template>
 
 <script>
+import NavbarLink from '~/components/Links/NavBarLink'
+
 export default {
-  name: 'we-design'
+  name: 'WeDesign',
+  components: {
+    NavbarLink,
+  },
 }
 </script>
