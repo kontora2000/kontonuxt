@@ -1,10 +1,10 @@
 <template>
-  <section class="bg-black-flag"></section>
+  <section class="bg-black-flag" />
 </template>
 
 <script>
 
 export default {
-  name: 'flag-section'
+  name: 'FlagSection',
 }
 </script>

@@ -1,29 +1,28 @@
 
 export default {
-  mode: 'universal',
   /*
   ** Headers of the page
   */
   head: {
     title: 'Контора: айдентика, сайты, приложения, реклама и контент для соцсетей',
     meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Контора: айдентика, сайты, приложения, реклама и контент для соцсетей' }
+      { charset: 'utf-8', },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1', },
+      { hid: 'description', name: 'description', content: 'Контора: айдентика, сайты, приложения, реклама и контент для соцсетей', }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon/favicon.ico' }
-    ]
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon/favicon.ico', }
+    ],
   },
   /*
   ** Customize the progress-bar color
   */
-  loading: { color: '#fff' },
+  loading: { color: '#fff', },
   /*
   ** Global CSS
   */
   css: [
-    { src: '~static/style.css' }
+    { src: '~static/style.css', }
   ],
   /*
   ** Plugins to load before mounting the App
@@ -41,7 +40,7 @@ export default {
   */
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
-    '@nuxtjs/axios',
+    '@nuxtjs/axios'
   ],
   /*
   ** Axios module configuration
@@ -56,7 +55,8 @@ export default {
     /*
     ** You can extend webpack config here
     */
-    extend (config, ctx) {
-    }
-  }
+    transpile: [
+      'gsap'
+    ],
+  },
 }
