@@ -3,7 +3,7 @@
     <div class="about-cont">
       <div class="about">
         Независимая команда дизайнеров и&nbsp;разработчиков.
-        <br />Разбросаны по&nbsp;всей
+        <br>Разбросаны по&nbsp;всей
         <span class="red-star">★</span>&hairsp;России, работаем по&nbsp;всему миру
       </div>
       <div class="about-vacancies-partnership">

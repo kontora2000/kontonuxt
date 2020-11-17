@@ -25,12 +25,7 @@
             <span class="link-underline-solid">Рекламу</span>
           </a>
         </li>
-        <li class="nav-main-link-wrapper">
-          и&nbsp;
-          <a class="nav-main-link" href="#">
-            <span class="link-underline-solid">контент в&nbsp;соцсети</span>
-          </a>
-        </li>
+        <li class="nav-main-link-wrapper">и&thinsp;<a class="nav-main-link" href="#"><span class="link-underline-solid">контент</span></a></li>
       </ul>
     </div>
     <div class="button-buy-design-wrapper">
