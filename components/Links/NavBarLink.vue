@@ -19,7 +19,7 @@ if (process.client) {
 export default {
   name: 'NavBarLink',
   mounted () {
-    const ulOffsetTop = document.querySelector('.nav-main-ul').offsetTop + 'px'
+    const ulOffsetTop = document.querySelector('.nav-main-ul').offsetTop + 50 + 'px'
     gsap.to(this.$refs.link, {
       css: {
         color: '#fff',
@@ -27,7 +27,7 @@ export default {
       duration: 0.2,
       scrollTrigger: {
         trigger: this.$el,
-        toggleActions: 'play reverse play reverse',
+        toggleActions: 'play reverse reverse reverse',
         start: `top ${ulOffsetTop}`,
         markers: true,
       },
