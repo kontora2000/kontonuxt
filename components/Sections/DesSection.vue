@@ -11,7 +11,7 @@
         <navbar-link>Сайты</navbar-link>
         <navbar-link>Приложения</navbar-link>
         <navbar-link>Рекламу</navbar-link>
-        <navbar-link>контент в&nbsp;соцсети</navbar-link>
+        <navbar-link>и&nbsp;контент</navbar-link>
       </ul>
     </div>
     <div class="button-buy-design-wrapper">
@@ -25,6 +25,8 @@
   </section>
 </template>
 
+
+
 <script>
 import NavbarLink from '~/components/Links/NavBarLink'
 
@@ -35,3 +37,48 @@ export default {
   },
 }
 </script>
+
+
+
+<style scoped>
+.we-design {
+  margin-top: 12rem;
+}
+
+.we-design .mainpage-section-header-wrapper {
+    display: inline-block;
+    margin-left: 18%;
+    min-height: 50rem;
+    vertical-align: top;
+}
+
+.we-design .mainpage-section-header {
+    color: var(--White100);
+    mix-blend-mode: difference;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 20rem;
+}
+.we-design .mainpage-section-header::after {
+    background-color: var(--White100);
+}
+
+.we-design .nav-main {
+    display: inline-block;
+}
+
+.button-buy-design-wrapper {
+    display: inline-block;
+    position: absolute;
+    top: 18%;
+    right: 6%;
+}
+
+
+
+@media (min-width: 1340px) {}
+
+
+
+@media (max-width: 460px) {}
+</style>
