@@ -30,7 +30,7 @@
         </picture>
         <div class="player-name-cont">
           <div class="player-name">
-            <a class="link-underline-solid" href="https://instagram.com/greeekov" target="_blank">Артём Греков</a>
+            <a class="link-underline-solid" href="https://artemon.gq" target="_blank">Артём Греков</a>
           </div>
           <sup class="player-job-title">Дизайнер</sup>
         </div>

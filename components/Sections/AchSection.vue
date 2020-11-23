@@ -1,8 +1,8 @@
 <template>
     <section class="achievements-cont">
         <div class="achiev-item">
-            <div class="achiev-digit">8</div>
-            <div class="achiev-text">лет офигенной<br />работы</div>
+            <div class="achiev-digit">3</div>
+            <div class="achiev-text">года офигенной<br />работы</div>
         </div>
         <div class="achiev-item">
             <div class="achiev-digit">100</div>
@@ -23,7 +23,7 @@
 
 <script>
 export default {
-  name: 'Achivments'
+  name: 'Achievements'
 }
 </script>
 

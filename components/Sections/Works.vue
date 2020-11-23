@@ -190,7 +190,7 @@ export default {
     margin: 3.2rem 0 0 1.2rem;
     position: absolute;
     top: auto;
-    width: 18%;
+    width: 10%;
 }
 
 .work-cont {

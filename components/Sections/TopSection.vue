@@ -1,15 +1,11 @@
 <template>
   <section class="top-section">
     <div class="about-cont">
-      <div class="about">
-        Независимая команда дизайнеров и&nbsp;разработчиков.
-        <br>Разбросаны по&nbsp;всей
-        <span class="red-star">★</span>&hairsp;России, работаем по&nbsp;всему миру
+      <div class="about">Независимая команда дизайнеров и&nbsp;разработчиков.
+        <br>Разбросаны по&nbsp;всей <span class="red-star">★</span>&hairsp;России, работаем по&nbsp;всему миру
       </div>
       <div class="about-vacancies-partnership">
-        Сейчас открыты
-        <a class="link-underline-dashed" href="job.html">3&nbsp;вакансии</a> и&nbsp;работает
-        <a class="link-underline-dashed" href="partnership.html">партнёрская программа</a>
+        <span class="about-vacancies-wrapper">Сейчас открыты <NuxtLink to="/job" class="link-underline-dashed">3&nbsp;вакансии</NuxtLink></span><span class="about-partnership-wrapper"> и&nbsp;работает <NuxtLink to="/partnership" class="link-underline-dashed">партнёрская программа</NuxtLink></span>
       </div>
     </div>
     <div class="contacts contacts-top-section">

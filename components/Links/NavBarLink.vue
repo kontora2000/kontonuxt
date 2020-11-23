@@ -54,16 +54,14 @@ export default {
   }
 
   .nav-main-link {
-      border-radius: 100px;
       color: var(--White100);
-      padding: 0 2rem;
+      cursor: pointer;
       transition: background-color .1s linear,
                   border-bottom-color .175s linear,
                   color .175s linear;
   }
   .nav-main-link:hover {
-      background-color: var(--White100);
-      color: var(--Black100);
+      color: var(--White100);
   }
 
   .nav-main-link>.link-underline-solid {
@@ -71,11 +69,12 @@ export default {
       border-bottom-width: 3px;
   }
   .nav-main-link:hover>.link-underline-solid {
-      border-bottom-color: transparent;
+      border-bottom-color: var(--White100);
+      color: var(--White100);
   }
 
    .nav-main-link-grey { 
-    color: var(--White32)
+    color: var(--White32);
   }
 
 

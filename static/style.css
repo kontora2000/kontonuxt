@@ -701,74 +701,7 @@ header a.link-underline-dashed:hover {
 
 /* Vacancies */
 
-.page-cont-vacancies {}
 
-.page-cont-vacancies>h2 {
-    max-width: 80rem;
-    line-height: 6rem;
-}
-
-.page-cont-vacancies>.page-section-header::after {
-    display: none;
-}
-
-.vacancies-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 4rem;
-    grid-row-gap: 10rem;
-    margin-top: 8rem;
-}
-
-.vacancy-cont {
-    grid-column: span 1;
-    grid-row: span 1;
-    max-width: 40rem;
-}
-
-.vacancy-cont h4 {
-    font-family: var(--font-serif);
-}
-
-.vacancy-cont-button-send {
-    font-size: 2rem;
-    margin-top: 1.8rem;
-}
-
-
-
-/* Footer */
-
-footer {
-    color: var(--Gray100);
-    margin-top: 6rem;
-    padding: 3.2rem 2.8rem 2.4rem 18%;
-}
-
-footer a {
-    color: var(--Gray100);
-}
-footer a:hover {
-    color: var(--Black100);
-}
-
-footer div {
-    display: inline-block;
-}
-
-footer>div:not(:first-child) {
-    margin-left: 8rem;
-}
-
-.contacts-footer-inner:not(:last-child),
-.social-links-footer>.social-link-wrapper:not(:last-child),
-.vacancies-partnership-link-wrapper:not(:last-child) {
-    margin-right: 3.2rem;
-}
-
-.copyright {
-    float: right;
-}
 
 
 
