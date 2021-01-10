@@ -14,13 +14,13 @@
         <navbar-link>и&nbsp;контент</navbar-link>
       </ul>
     </div>
-    <div class="button-buy-design-wrapper">
-      <button class="button-buy-design">
-        <span class="button-buy-design-sign">
+    <div style="display: none;" class="button-buy-design-wrapper">
+      <nuxt-link to="/order" class="button-buy-design button">
+        <span class="button-buy-design-sign"> 
           Купить
           <br>дизайн!
         </span>
-      </button>
+      </nuxt-link>
     </div>
   </section>
 </template>

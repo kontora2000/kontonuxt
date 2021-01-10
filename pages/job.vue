@@ -31,7 +31,7 @@
       </div>
     </section>
     <section class="page-cont-vacancies page-cont">
-      <h2>Если вы делаете крутые штуки и&nbsp;хотите вместе с&nbsp;нами работать, но&nbsp;тут нет вашей вакансии&nbsp;— напишите нам на&nbsp;<a class="link-underline-solid" href="mailto:job@kontora.cc?subject=Хочу с вами работать">job@kontora.cc</a></h2>
+      <h2>Если вдруг вы делаете крутые штуки и&nbsp;ищете свою компанию, но&nbsp;тут&nbsp;нет&nbsp;вашей вакансии&nbsp;— напишите нам на&nbsp;<a class="link-underline-solid" href="mailto:job@kontora.cc?subject=Хочу с вами работать">job@kontora.cc</a></h2>
     </section>
   </main>
 </template>
