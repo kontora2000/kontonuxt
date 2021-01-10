@@ -18,7 +18,7 @@
     </div>
     <div class="social-top-section">
       <div class="social-top-section-inner social-link-wrapper">
-        <a class="social-link link-underline-solid" href="https://instagram.com/kontoragram">Instagram</a>
+        <a class="social-link link-underline-solid" href="https://instagram.com/kontoragram/">Instagram</a>
       </div>
       <div class="social-top-section-inner social-link-wrapper">
         <a class="social-link link-underline-solid" href="https://t.me/kontoragram">Telegram</a>

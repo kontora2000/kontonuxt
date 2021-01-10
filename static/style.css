@@ -552,12 +552,6 @@ header a.link-underline-dashed:hover {
     border-bottom-color: var(--White100);
 }
 
-/*.nav-header,
-.about-cont,
-.contacts-header {
-    margin-top: .6rem;
-}*/
-
 .nav-header {
     display: none;
 }
@@ -634,83 +628,6 @@ header a.link-underline-dashed:hover {
 .link-close-page:hover {
     transform: scale(1.125);
 }
-
-
-
-/* Order */
-
-.form-order {
-    margin-top: 7.2rem;
-}
-
-.switcher-cont {
-    margin-bottom: 7.2rem;
-    overflow: hidden;
-}
-
-.switcher-cont > * {
-    display: inline-block;
-    vertical-align: middle;
-}
-
-.switcher-cont > input[type="radio"] + label,
-.switcher-cont > input[type="radio"]:checked + label {
-    background-color: transparent;
-    border-radius: 0;
-    border-width: 0 0 1px 0;
-    float: none;
-    font-size: 2.8rem;
-    line-height: 3.2rem;
-    margin: 0;
-    padding: 0 0 .4rem 0;
-    position: relative;
-    text-align: left;
-    z-index: 2;
-}
-.switcher-cont > input[type="radio"] + label {
-    color: var(--Gray100);
-}
-.switcher-cont > input[type="radio"]:checked + label {
-    color: var(--Blue100);
-}
-
-.switcher-bg {
-    background: linear-gradient(293.78deg, #F5F5F5 58.44%, #EAEAEA 100%), linear-gradient(0deg, #FFFFFF, #FFFFFF), #F5F5F5;
-    border-radius: 100px;
-    height: 6.4rem;
-    margin: 0 2rem;
-    padding: .3rem;
-    width: 12.4rem;
-}
-
-.switcher-switch {
-    background: radial-gradient(64.66% 64.66% at 31.03% 28.45%, #0088FF 1.18%, #0055FF 100%);
-    border-radius: 100px;
-    height: 5.8rem;
-    width: 5.8rem;
-    box-shadow: 1px 1px 3px rgba(0, 51, 153, 0.56),
-                inset 4px 4px 16px rgba(255, 255, 255, 0.32),
-                inset -6px -8px 16px rgba(0, 34, 68, 0.12);
-}
-
-.order-project-type-tabs {
-    max-width: 80rem;
-}
-
-.radio-buttons-cont {
-    margin: 3.2rem 0 5.6rem;
-    overflow: hidden;
-}
-
-.form-order .input-wrapper {
-    max-width: 52rem;
-}
-
-
-
-/* Vacancies */
-
-
 
 
 
