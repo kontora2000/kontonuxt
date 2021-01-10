@@ -1,13 +1,13 @@
 <template>
     <footer>
-        <div v-if="('./job.vue')" class="contacts contacts-footer">
+        <div v-if="$route.path!=='/' && $route.path!==''" class="contacts contacts-footer">
             <div class="tel contacts-footer-inner">+7 988 668-14-88</div>
             <div class="email-cont contacts-footer-inner">
                 <a class="link-email link-underline-solid" href="mailto:mail@kontora.cc">mail@kontora.cc</a>
             </div>
         </div>
 
-        <div v-if="('./job.vue')" class="social-links-footer">
+        <div v-if="$route.path!=='/' && $route.path!==''" class="social-links-footer">
             <div class="social-link-wrapper">
                 <a class="social-link link-underline-solid" href="https://t.me/kontoragram">Telegram</a>
             </div>
