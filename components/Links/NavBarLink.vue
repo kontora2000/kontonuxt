@@ -49,9 +49,6 @@ export default {
   .nav-main-link-wrapper:not(:last-child) {
       margin-bottom: 4rem;
   }
-  .nav-main-link-wrapper:last-child {
-      margin-left: 1.8rem;
-  }
 
   .nav-main-link {
       color: var(--White100);
