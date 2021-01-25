@@ -1,20 +1,26 @@
 <template>
     <section class="achievements-cont">
-        <div class="achiev-item">
-            <div class="achiev-digit">3</div>
-            <div class="achiev-text">года офигенной<br />работы</div>
+        <div class="achiev-items-wrapper">
+            <div class="achiev-item">
+                <div class="achiev-digit">3</div>
+                <div class="achiev-text">года офигенной<br />работы</div>
+            </div>
+            <div class="achiev-item">
+                <div class="achiev-digit">100</div>
+                <div class="achiev-text">реализованных<br />проектов</div>
+            </div>
+            <div class="achiev-item">
+                <div class="achiev-digit">4</div>
+                <div class="achiev-text">человека<br />в&nbsp;команде</div>
+            </div>
+            <div class="achiev-item">
+                <div class="achiev-digit">7</div>
+                <div class="achiev-text">лет<br />в&nbsp;Тибете</div>
+            </div>
         </div>
-        <div class="achiev-item">
-            <div class="achiev-digit">100</div>
-            <div class="achiev-text">реализованных<br />проектов</div>
-        </div>
-        <div class="achiev-item">
-            <div class="achiev-digit">4</div>
-            <div class="achiev-text">человека<br />в&nbsp;команде</div>
-        </div>
-        <div class="achiev-item">
-            <div class="achiev-digit">7</div>
-            <div class="achiev-text">лет<br />в&nbsp;Тибете</div>
+        <div class="achiev-about-wrapper">
+            <h4 class="achiev-about-item">Работаем с&nbsp;2017. Имеем большой опыт разработки сайтов и&nbsp;приложений для&nbsp;СМИ и&nbsp;онлайн&thinsp;–&thinsp;коммерции</h4>
+            <div class="achiev-about-item">Кек</div>
         </div>
     </section>
 </template>
@@ -63,5 +69,22 @@ export default {
     display: inline-block;
     mix-blend-mode: difference;
     vertical-align: top;
+}
+
+.achiev-about-wrapper {
+    margin-top: 5.6rem;
+}
+
+.achiev-about-item {
+    display: inline-flex;
+    flex-direction: column;
+}
+.achiev-about-item:nth-child(1) {
+    margin-right: 4rem;
+    max-width: 52rem;
+}
+.achiev-about-item:nth-child(2) {
+    font-size: 2rem;
+    line-height: 2.8rem;
 }
 </style>

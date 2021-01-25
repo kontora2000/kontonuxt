@@ -48,7 +48,7 @@
       </div>
     </div>
     <div class="button-vacancies-wrapper">
-      <a href="vacancies.html" class="button-vacancies button">3&nbsp;вакансии</a>
+      <NuxtLink to="/job" class="button-vacancies button">3&nbsp;вакансии</NuxtLink>
     </div>
   </section>
 </template>

@@ -183,7 +183,7 @@ export default {
 
 .works-wrapper>.mainpage-section-header {
     margin-left: 36%;
-    margin-top: 20rem;
+    margin-top: 24rem;
 }
 
 .works-wrapper .mainpage-section-header::after {
@@ -195,6 +195,7 @@ export default {
 
 .work-cont {
     grid-row: span 1;
+    margin-top: 8rem;
 }
 
 .work-cont-half {
