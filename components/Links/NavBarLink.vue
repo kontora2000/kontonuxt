@@ -47,7 +47,7 @@ export default {
       mix-blend-mode: difference;
   }
   .nav-main-link-wrapper:not(:last-child) {
-      margin-bottom: 4rem;
+      margin-bottom: 2.4rem;
   }
 
   .nav-main-link {
