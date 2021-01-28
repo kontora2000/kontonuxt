@@ -48,7 +48,7 @@ export default {
 .we-design .mainpage-section-header-wrapper {
     display: inline-block;
     margin-left: 18%;
-    min-height: 50rem;
+    min-height: 43rem;
     vertical-align: top;
 }
 
