@@ -1,9 +1,6 @@
 <template>
   <div class="logo-wrapper">
-    <nuxt-link class="logo" to="/">
-      Контора
-      <sup class="logo-sup">®</sup>
-    </nuxt-link>
+    <nuxt-link class="logo" to="/">Контора<sup class="logo-sup">®</sup></nuxt-link>
   </div>
 </template>
 

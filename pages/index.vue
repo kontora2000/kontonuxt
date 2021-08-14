@@ -3,7 +3,7 @@
     <Flag-section />
     <Top-section />
     <We-design />
-    <Achivments />
+    <Achievements />
     <Works />
     <Clients />
     <Team />
@@ -16,11 +16,12 @@ import Header from '~/components/Header'
 import FlagSection from '~/components/Sections/FlagSection'
 import TopSection from '~/components/Sections/TopSection'
 import WeDesign from '~/components/Sections/DesSection'
-import Achivments from '~/components/Sections/AchSection'
+import Achievements from '~/components/Sections/AchSection'
 import Clients from '~/components/Sections/ClientSection'
 import Team from '~/components/Sections/TeamSection'
 import Works from '~/components/Sections/Works'
 import Contacts from '~/components/Sections/Contacts'
+import Footer from '~/components/Footer'
 
 export default {
   components: {
@@ -28,11 +29,12 @@ export default {
     FlagSection,
     TopSection,
     WeDesign,
-    Achivments,
+    Achievements,
     Works,
     Clients,
     Team,
     Contacts,
+    Footer
   },
 }
 </script>

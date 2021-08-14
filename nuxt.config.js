@@ -4,11 +4,11 @@ export default {
   ** Headers of the page
   */
   head: {
-    title: 'Контора: айдентика, сайты, приложения, реклама и контент для соцсетей',
+    title: 'Контора — айдентика, сайты, приложения, реклама и контент для соцсетей',
     meta: [
       { charset: 'utf-8', },
       { name: 'viewport', content: 'width=device-width, initial-scale=1', },
-      { hid: 'description', name: 'description', content: 'Контора: айдентика, сайты, приложения, реклама и контент для соцсетей', }
+      { hid: 'description', name: 'description', content: 'Создаём и продвигаем бренды, проектируем интерфейсы, дизайним и программируем приложения и сайты', }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon/favicon.ico', }
@@ -17,7 +17,7 @@ export default {
   /*
   ** Customize the progress-bar color
   */
-  loading: { color: '#fff', },
+  loading: { color: '#0055FF', },
   /*
   ** Global CSS
   */

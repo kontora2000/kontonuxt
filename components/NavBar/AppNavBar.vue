@@ -1,13 +1,23 @@
 <template>
-  <nav class="nav-header">
+  <div class="nav-main">
     <ul class="nav-main-ul">
-      <navbar-link hash="ident">Айдентику</navbar-link>
-      <navbar-link hash="sites">Сайты</navbar-link>
-      <navbar-link hash="apps">Приложухи</navbar-link>
-      <navbar-link hash="adv">Реклама</navbar-link>
-      <navbar-link hash="content">Контент</navbar-link>
+      <navbar-link hash="ident">
+        Айдентику
+      </navbar-link>
+      <navbar-link hash="sites">
+        Сайты
+      </navbar-link>
+      <navbar-link hash="apps">
+        Приложухи
+      </navbar-link>
+      <navbar-link hash="adv">
+        Рекламу
+      </navbar-link>
+      <navbar-link hash="content">
+        Контент
+      </navbar-link>
     </ul>
-  </nav>
+  </div>
 </template>
 
 <script>
