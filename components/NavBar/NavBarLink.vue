@@ -1,10 +1,10 @@
 <template>
   <li class="nav-main-link-wrapper">
-    <a ref="link" class="nav-main-link nav-main-link-grey">
+    <nuxt-link ref="link" :to="`#${hash}`" class="nav-main-link nav-main-link-grey">
       <span class="link-underline-solid">
         <slot />
       </span>
-    </a>
+    </nuxt-link>
   </li>
 </template>
 
@@ -18,11 +18,20 @@ if (process.client) {
 
 export default {
   name: 'NavBarLink',
+  props: {
+    hash: {
+      type: String,
+      default: '',
+      required: true,
+    },
+  },
   mounted () {
-    const ulOffsetTop = document.querySelector('.nav-main-ul').offsetTop + 50 + 'px'
+    const h = this.props.hash;
+    const ulOffsetTop = `${document.querySelector('.nav-main-ul').offsetTop + 50}px`
+    
     gsap.to(this.$refs.link, {
       css: {
-        color: '#fff',
+        color: 'red',
       },
       duration: 0.2,
       scrollTrigger: {
@@ -30,6 +39,9 @@ export default {
         toggleActions: 'play reverse reverse reverse',
         start: `top ${ulOffsetTop}`,
         markers: true,
+      },
+      onStart: () => {
+         
       },
     })
   },

@@ -6,10 +6,10 @@
         <br />Разбросаны по&nbsp;всей
         <span class="red-star">★</span>&hairsp;России, работаем по&nbsp;всему миру
       </div>
-      <div class="about-vacancies-partnership">
+      <div class="about-vacancies-partnership" v-show="false">
         Сейчас открыты
-        <a class="link-underline-dashed" href="job.html">3&nbsp;вакансии</a> и&nbsp;работает
-        <a class="link-underline-dashed" href="partnership.html">партнёрская программа</a>
+        <nuxt-link class="link-underline-dashed" to="/job">3&nbsp;вакансии</nuxt-link> и&nbsp;работает
+        <nuxt-link class="link-underline-dashed" to="/partnership">партнёрская программа</nuxt-link>
       </div>
     </div>
     <div class="contacts contacts-top-section">

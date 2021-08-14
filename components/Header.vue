@@ -1,19 +1,19 @@
 <template>
   <header>
     <site-logo />
-    <navbar />
+    <app-nav-bar />
   </header>
 </template>
 
 <script>
+import AppNavBar from './NavBar/AppNavBar.vue'
 import SiteLogo from '@/components/SiteLogo'
-import Navbar from '@/components/Navbar'
 
 export default {
   name: 'Header',
   components: {
     SiteLogo,
-    Navbar,
+    AppNavBar,
   },
 }
 </script>

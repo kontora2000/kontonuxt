@@ -5,15 +5,7 @@
         Делаем
       </h1>
     </div>
-    <div class="nav-main">
-      <ul class="nav-main-ul">
-        <navbar-link>Айдентику</navbar-link>
-        <navbar-link>Сайты</navbar-link>
-        <navbar-link>Приложения</navbar-link>
-        <navbar-link>Рекламу</navbar-link>
-        <navbar-link>контент в&nbsp;соцсети</navbar-link>
-      </ul>
-    </div>
+  <AppNavBar />
     <div class="button-buy-design-wrapper">
       <button class="button-buy-design">
         <span class="button-buy-design-sign">
@@ -26,12 +18,12 @@
 </template>
 
 <script>
-import NavbarLink from '~/components/Links/NavBarLink'
+import AppNavBar from '../NavBar/AppNavBar.vue'
 
 export default {
   name: 'WeDesign',
   components: {
-    NavbarLink,
+    AppNavBar,
   },
 }
 </script>
