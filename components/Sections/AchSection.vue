@@ -39,7 +39,7 @@ export default {
 .achievements-cont {
     margin-left: 18%;
     margin-top: 28rem;
-    min-height: 40vh;
+    min-height: 64vh;
 }
 
 .achiev-item {
@@ -72,7 +72,7 @@ export default {
 }
 
 .achiev-about-wrapper {
-    margin-top: 5.6rem;
+    margin-top: 7.2rem;
 }
 
 .achiev-about-item {
