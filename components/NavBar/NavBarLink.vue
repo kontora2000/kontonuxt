@@ -37,6 +37,9 @@ export default {
       document.addEventListener('scroll', () => {
         this.checkIfWhite()
       }, { passive: true, })
+      window.addEventListener('resize', () => {
+        this.checkIfWhite()
+      })
     }
   },
   methods: {
@@ -44,7 +47,7 @@ export default {
       if (process.client) {
         const pointer = document.querySelector('.mainpage-section-header')
         if (pointer) {
-          const pointerTop = pointer.getBoundingClientRect().top
+          const pointerTop = pointer.getBoundingClientRect().top + (pointer.offsetHeight / 2)
           const el = this.$refs.link.$el
           const linkTop = el.getBoundingClientRect().top
           const linkBottom = this.$el.getBoundingClientRect().top + this.$el.offsetHeight
