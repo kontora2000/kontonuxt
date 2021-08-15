@@ -154,21 +154,24 @@
         </div>
       </div>
     </div>
-    <ProjectItem
-      v-for="(project, index) in projects" 
-      :key="project.slug"
-      :project="project" 
-    />
-    <div class="button-showmore-wrapper">
-      <button class="button-showmore">
-        Ещё работы
-      </button>
-    </div>
+    <template v-if="projects">
+      <ProjectItem
+        v-for="(project, index) in projects"
+     
+        :key="project.slug"
+        :project="project" 
+        :index="index"
+      />
+      <div class="button-showmore-wrapper">
+        <button class="button-showmore">
+          Ещё работы
+        </button>
+      </div>
+    </template>
   </section>
 </template>
 
 <script>
-
 import ProjectItem from '../Project/ProjectItem.vue';
 
 export default {
@@ -177,7 +180,9 @@ export default {
     ProjectItem, 
   },
   computed: {
-    projects: () => this.$store.projects.projects,
+    projects () {
+      return this?.$store?.state?.projects?.projects;
+    },
   },
   async mounted () {
     try {

@@ -25,3 +25,9 @@ export const actions = {
     await bindFirestoreRef('projects', ref, { wait: true, });
   }),
 };
+
+export const getters = {
+  projects () {
+    return this.state.projects;
+  },
+};
