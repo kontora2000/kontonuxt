@@ -1,7 +1,8 @@
 <template>
   <section class="works-cont">
     <div class="works-wrapper">
-      <h1 class="mainpage-section-header">Сделали
+      <h1 class="mainpage-section-header">
+        Сделали
         <sup class="mainpage-section-header-sup section-header-sup">
           недавно разработанные
           <br>решения
@@ -153,6 +154,11 @@
         </div>
       </div>
     </div>
+    <ProjectItem
+      v-for="(project, index) in projects" 
+      :key="project.slug"
+      :project="project" 
+    />
     <div class="button-showmore-wrapper">
       <button class="button-showmore">
         Ещё работы
@@ -161,15 +167,27 @@
   </section>
 </template>
 
-
-
 <script>
+
+import ProjectItem from '../Project/ProjectItem.vue';
+
 export default {
-  name: 'Works',
-}
+  name: 'ProjectSection',
+  components: {
+    ProjectItem, 
+  },
+  computed: {
+    projects: () => this.$store.projects.projects,
+  },
+  async mounted () {
+    try {
+      await this.$store.dispatch('projects/bindProjectsRef');
+    } catch (e) {
+      console.error(e);
+    }
+  },
+};
 </script>
-
-
 
 <style scoped>
 .works-wrapper {
@@ -290,11 +308,7 @@ export default {
     padding: 3.2rem 13.2rem;
 }
 
-
-
 @media (min-width: 1340px) {}
-
-
 
 @media (max-width: 460px) {
   .works-wrapper {

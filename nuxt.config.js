@@ -40,7 +40,25 @@ export default {
   */
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
-    '@nuxtjs/axios'
+    '@nuxtjs/axios',
+    [
+      '@nuxtjs/firebase',
+      {
+        config: {
+          apiKey: 'AIzaSyDGWzKfQ5D1fUu0IwPNGCfNEKn2HNl4tw4',
+          authDomain: 'kontora-acd10.firebaseapp.com',
+          databaseURL: 'https://kontora-acd10-default-rtdb.europe-west1.firebasedatabase.app',
+          projectId: 'kontora-acd10',
+          storageBucket: 'kontora-acd10.appspot.com',
+          messagingSenderId: '772230532670',
+          appId: '1:772230532670:web:6982593bded3afeb2d8b6f',
+        },
+        services: {
+          firestore: true,
+          auth: true,
+        },
+      }
+    ]
   ],
   /*
   ** Axios module configuration
@@ -59,4 +77,4 @@ export default {
       'gsap'
     ],
   },
-}
+};

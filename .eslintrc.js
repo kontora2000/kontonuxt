@@ -23,6 +23,7 @@ module.exports = {
   "no-trailing-spaces":0, //позволить всиящие пробелы
   "consistent-return":0, //позволить функциям не возвращать значения
   "no-underscore-dangle":0, //разрешить нижний слэш в имени переменных
-  "import/no-extraneous-dependencies": ["error", {"devDependencies": true, "optionalDependencies": true, "peerDependencies": true}]
+  "import/no-extraneous-dependencies": ["error", {"devDependencies": true, "optionalDependencies": true, "peerDependencies": true}],
+  "semi": [2, "always"]
   }
 }
