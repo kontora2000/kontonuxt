@@ -2,6 +2,9 @@
   <div class="player-cont">
     <picture
       class="player-photo"
+      :style="{
+        opacity: opacity,
+      }"
       @mouseenter="onMouseEnter"
       @mouseleave="onMouseLeave"
     >
@@ -44,6 +47,7 @@ export default {
   data () {
     return {
       timerID: 0,
+      opacity: 1,
     };
   },
   methods: {
@@ -52,11 +56,13 @@ export default {
         clearTimeout(this.timerID);
       }
       this.$store.commit('app/SET_IMAGE_ON_CURSOR', this.$refs.image.src || '');
+      this.opacity = 0;
     },
     onMouseLeave (e) {
       if (window) {
         this.timerID = setTimeout(() => {
           this.$store.commit('app/SET_IMAGE_ON_CURSOR', '');
+          this.opacity = 1;
         }, 3000);
       }
     },
