@@ -154,20 +154,19 @@
         </div>
       </div>
     </div>
-    <template v-if="projects">
+    <template v-if="false">
       <ProjectItem
         v-for="(project, index) in projects"
-     
         :key="project.slug"
         :project="project" 
         :index="index"
       />
-      <div class="button-showmore-wrapper">
-        <button class="button-showmore">
-          Ещё работы
-        </button>
-      </div>
     </template>
+    <div class="button-showmore-wrapper">
+      <button class="button-showmore">
+        Ещё работы
+      </button>
+    </div>
   </section>
 </template>
 

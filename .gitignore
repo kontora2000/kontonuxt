@@ -88,3 +88,6 @@ sw.*
 
 # Vim swap files
 *.swp
+
+#remove static works folder
+./static/works

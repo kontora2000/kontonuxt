@@ -6,13 +6,13 @@
     <Achievements />
     <ProjectsSection />
     <Clients />
+    <ImgOnCursor />
     <Team />
     <Contacts />
   </main>
 </template>
 
 <script>
-import Header from '~/components/Header';
 import FlagSection from '~/components/Sections/FlagSection';
 import TopSection from '~/components/Sections/TopSection';
 import WeDesign from '~/components/Sections/DesSection';
@@ -21,7 +21,7 @@ import Clients from '~/components/Sections/ClientSection';
 import ProjectsSection from '~/components/Sections/ProjectsSection.vue';
 import Team from '~/components/Sections/TeamSection';
 import Contacts from '~/components/Sections/Contacts';
-import Footer from '~/components/Footer';
+import ImgOnCursor from '~/components/ImgOnCursor.vue';
 
 export default {
   components: {
@@ -33,7 +33,7 @@ export default {
     Clients,
     Team,
     Contacts,
-    Footer,
+    ImgOnCursor,
   },
 };
 </script>

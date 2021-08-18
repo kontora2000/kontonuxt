@@ -7,12 +7,12 @@
 </template>
 
 <script>
-import SiteHeader from '~/components/Header'
-import SiteFooter from '~/components/Footer'
+import SiteHeader from '~/components/Header';
+import SiteFooter from '~/components/Footer';
 export default {
   components: {
     SiteHeader,
-    SiteFooter
+    SiteFooter,
   },
-}
+};
 </script>
