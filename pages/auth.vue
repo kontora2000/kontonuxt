@@ -1,7 +1,7 @@
 <template>
   <form @submit.prevent="onSubmit">
-    <input v-model="login" name="login" type="text">
-    <input v-model="pass" name="password" type="password">
+    <input v-model="email" name="email" type="email" required>
+    <input v-model="pass" name="password" type="password" required>
     <button>
       Авторизоваться
     </button>
@@ -12,14 +12,19 @@
 export default {
   data () {
     return {
-      login: '',
+      email: '',
       pass: '',
     };
   },
   methods: {
     async onSubmit () {
       try {
-        await this.store.dispatch('auth/login');
+        await this.$store.dispatch('auth/login', { email: this.email, password: this.pass, });
+        if (this.$store.getters['auth/isLoggedIn']) {
+          if (localStorage) {
+            localStorage.setItem('loggedIn', true);
+          }
+        }
       } catch (e) {
         console.error(e);
       }
