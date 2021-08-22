@@ -1,16 +1,20 @@
 <template>
-  <div class="player-cont">
+  <div
+    class="player-cont"
+  >
     <picture
       class="player-photo"
       :style="{
         opacity: opacity,
       }"
-      @mouseenter="onMouseEnter"
-      @mouseleave="onMouseLeave"
     >
       <img ref="image" class="player-photo-img" :src="image">
     </picture>
-    <div class="player-name-cont">
+    <div
+      class="player-name-cont"
+      @mouseover.stop="onMouseEnter"
+      @mouseleave.stop="onMouseLeave"
+    >
       <div class="player-name">
         <a
           class="link-underline-solid"
@@ -52,18 +56,16 @@ export default {
   },
   methods: {
     onMouseEnter (e) {
-      if (this.timerID && window) {
+      if (this.timrID && window) {
         clearTimeout(this.timerID);
       }
-      this.$store.commit('app/SET_IMAGE_ON_CURSOR', this.$refs.image.src || '');
+      this.$store.commit('app/SET_IMAGE_ON_CURSOR', this.$refs.image.src);
       this.opacity = 0;
     },
     onMouseLeave (e) {
       if (window) {
-        this.timerID = setTimeout(() => {
-          this.$store.commit('app/SET_IMAGE_ON_CURSOR', '');
-          this.opacity = 1;
-        }, 3000);
+        this.$store.commit('app/SET_IMAGE_ON_CURSOR', '');
+        this.opacity = 1;
       }
     },
   },

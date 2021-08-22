@@ -45,6 +45,8 @@ export default {
 <style scoped>
 .img-on-cursor {
    position: absolute;
+   z-index: -1;
+   tabindex:0;
 }
 
 .img-on-cursor img {
