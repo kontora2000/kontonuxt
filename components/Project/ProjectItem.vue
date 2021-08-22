@@ -15,6 +15,9 @@
         </a>
       </div>
     </div>
+    <button @click="selectProject">
+      Редактировать
+    </button>
   </div>
 </template>
 
@@ -36,6 +39,11 @@ export default {
     content () {
       return `${this.project.content}
         <style>${this.project.style}</style>`;
+    },
+  },
+  methods: {
+    selectProject () {
+      this.$store.commit('projects/SET_CURRENT_PROJECT_ID', this.index);
     },
   },
 };

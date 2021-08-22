@@ -154,7 +154,7 @@
         </div>
       </div>
     </div>
-    <template v-if="false">
+    <template v-if="projects && projects.length">
       <ProjectItem
         v-for="(project, index) in projects"
         :key="project.slug"

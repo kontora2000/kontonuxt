@@ -9,6 +9,7 @@
     <ImgOnCursor />
     <Team />
     <Contacts />
+    <ProjectEditor />
   </main>
 </template>
 
@@ -22,6 +23,7 @@ import ProjectsSection from '~/components/Sections/ProjectsSection.vue';
 import Team from '~/components/Sections/TeamSection';
 import Contacts from '~/components/Sections/Contacts';
 import ImgOnCursor from '~/components/ImgOnCursor.vue';
+import ProjectEditor from '~/components/ProjectEditor/ProjectEditor.vue';
 
 export default {
   components: {
@@ -34,6 +36,7 @@ export default {
     Team,
     Contacts,
     ImgOnCursor,
+    ProjectEditor,
   },
 };
 </script>
