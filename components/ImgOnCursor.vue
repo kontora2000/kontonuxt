@@ -45,6 +45,7 @@ export default {
 <style scoped>
 .img-on-cursor {
    position: absolute;
+   transition: all .06s cubic-bezier(0.42, 0.43, 0.46, 0.87);
    z-index: -1;
    tabindex:0;
 }

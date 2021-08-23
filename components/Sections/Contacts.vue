@@ -4,7 +4,7 @@
         <div class="big-contacts-inner">
             <div class="tel-email-wrapper">
                 <span>+7&nbsp;988&nbsp;668-14-88</span>
-                <a class="link-email link-underline-solid" href="mailto:mail@kontora.cc">mail@kontora.cc</a>
+                <a class="link-email link-underline-solid" href="mailto:mail@prostokontora.ru">mail@prostokontora.ru</a>
             </div>
             <div class="social-links-wrapper">
                 <div class="social-link-wrapper">

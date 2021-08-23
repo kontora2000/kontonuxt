@@ -15,7 +15,7 @@
         <a href="tel:+79886681488">+7&thinsp;988&thinsp;668-14-88</a>
       </div>
       <div class="email-cont contacts-top-section-inner">
-        <a class="link-email link-underline-solid" href="mailto:mail@kontora.cc">mail@kontora.cc</a>
+        <a class="link-email link-underline-solid" href="mailto:mail@prostokontora.ru">mail@prostokontora.ru</a>
       </div>
     </div>
     <div class="social-top-section">

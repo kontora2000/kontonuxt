@@ -3,7 +3,7 @@
         <div v-if="$route.path!=='/' && $route.path!==''" class="contacts contacts-footer">
             <div class="tel contacts-footer-inner">+7 988 668-14-88</div>
             <div class="email-cont contacts-footer-inner">
-                <a class="link-email link-underline-solid" href="mailto:mail@kontora.cc">mail@kontora.cc</a>
+                <a class="link-email link-underline-solid" href="mailto:mail@prostokontora.ru">mail@prostokontora.ru</a>
             </div>
         </div>
 

@@ -14,24 +14,24 @@
             <h4>Амбициозный дизайнер интерфейсов</h4>
             <p>Создание и развитие CMS для небольших проектов студии. Умение писать понятный код. Понимание оптимизации производительности фреймворка.</p>
             <p>Вы легко работаете с:<br> PHP, Laravel, Eloquent CMS, Nginx и Apache</p>
-            <a class="vacancy-cont-button-send button" href="mailto:job@kontora.cc?subject=Амбициозный дизайнер интерфейсов">Заявить о себе</a>
+            <a class="vacancy-cont-button-send button" href="mailto:job@prostokontora.ru?subject=Амбициозный дизайнер интерфейсов">Заявить о себе</a>
         </div>
         <div class="vacancy-cont">
             <h4>Педантичный разработчик</h4>
             <p>Создание и развитие CMS для небольших проектов студии. Умение писать понятный код. Понимание оптимизации производительности фреймворка.</p>
             <p>Вы легко работаете с:<br> PHP, Laravel, Eloquent CMS, Nginx и Apache</p>
-            <a class="vacancy-cont-button-send button" href="mailto:job@kontora.cc?subject=Педантичный разработчик">Откликнуться</a>
+            <a class="vacancy-cont-button-send button" href="mailto:job@prostokontora.ru?subject=Педантичный разработчик">Откликнуться</a>
         </div>
         <div class="vacancy-cont">
             <h4>Офигенный СММщик</h4>
             <p>Создание и развитие CMS для небольших проектов студии. Умение писать понятный код. Понимание оптимизации производительности фреймворка.</p>
             <p>Вы легко работаете с:<br> PHP, Laravel, Eloquent CMS, Nginx и Apache</p>
-            <a class="vacancy-cont-button-send button" href="mailto:job@kontora.cc?subject=Офигенный СММщик">Отправить резюме</a>
+            <a class="vacancy-cont-button-send button" href="mailto:job@prostokontora.ru?subject=Офигенный СММщик">Отправить резюме</a>
         </div>
       </div>
     </section>
     <section class="page-cont-vacancies page-cont">
-      <h2>Если вдруг вы делаете крутые штуки и&nbsp;ищете свою компанию, но&nbsp;тут&nbsp;нет&nbsp;вашей вакансии&nbsp;— напишите нам на&nbsp;<a class="link-underline-solid" href="mailto:job@kontora.cc?subject=Хочу с вами работать">job@kontora.cc</a></h2>
+      <h2>Если вдруг вы делаете крутые штуки и&nbsp;ищете свою компанию, но&nbsp;тут&nbsp;нет&nbsp;вашей вакансии&nbsp;— напишите нам на&nbsp;<a class="link-underline-solid" href="mailto:job@prostokontora.ru?subject=Хочу с вами работать">job@prostokontora.ru</a></h2>
     </section>
   </main>
 </template>
