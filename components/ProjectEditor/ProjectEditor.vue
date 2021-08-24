@@ -1,10 +1,10 @@
 <template>
   <div v-if="isVisible" class="project-editor">
     <form class="project-editor-form" @submit.prevent="updateProject">
-      <input v-model="title" type="text">
-      <input v-model="slug" type="text">
-      <input v-model="url" type="text">
-      <input v-model="size" type="text">
+      <input v-model="title" type="text" @change="updateCurrentProject">
+      <input v-model="slug" type="text" @change="updateCurrentProject">
+      <input v-model="url" type="text" @change="updateCurrentProject">
+      <input v-model="size" type="text" @change="updateCurrentProject">
       <textarea v-model="content" />
       <button>Сохранить изменения</button>
     </form>
@@ -48,6 +48,15 @@ export default {
     },
     updateProject () {
       this.$store.dispatch('projects/updateProject', {
+      });
+    },
+    updateCurrentProject () {
+      this.$store.commit('projects/SET_CURRENT_PROJECT', {
+        title: this.title,
+        slug: this.slug,
+        size: this.size,
+        content: this.content, 
+        url: this.url,
       });
     },
   },

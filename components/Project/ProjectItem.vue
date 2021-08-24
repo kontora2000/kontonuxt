@@ -2,7 +2,7 @@
   <div
     v-if="project"
     class="work-cont"
-    :class="`work-cont-${project.size}`"
+    :class="[`work-cont-${project.size}`, { selected: isSelected }]"
   >
     <div class="work-pic-cont" v-html="content" />
     <div class="work-name-cont">
@@ -25,21 +25,32 @@
 export default {
   name: 'ProjectItem',
   props: {
-    project: {
-      type: Object,
-      default: null,
-      required: true,
-    },
     index: {
       type: [Number, String],
       default: 0,
     },
+  },
+  data () {
+    return {
+      isCurrent: false,
+    };
   },
   computed: {
     content () {
       return `${this.project.content}
         <style>${this.project.style}</style>`;
     },
+    isSelected () {
+      return this?.project?.slug === this.$store.state.projects?.currentProject?.slug;
+    },
+    project () {
+      return this.isCurrent ? this.$store.state?.projects.projects?.currentProject : this.$store.state?.projects.projects[this.index];
+    },
+  },
+  watch: {
+    isSelected () {
+      this.isCurrent = this.isSelected;
+    }, 
   },
   methods: {
     selectProject () {
@@ -48,3 +59,9 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+ .selected {
+   outline: var(--Red100) .5rem dashed ;
+ }
+</style>

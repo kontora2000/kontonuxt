@@ -158,7 +158,6 @@
       <ProjectItem
         v-for="(project, index) in projects"
         :key="project.slug"
-        :project="project" 
         :index="index"
       />
     </template>
