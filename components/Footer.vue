@@ -26,6 +26,9 @@
             <div class="vacancies-partnership-link-wrapper">
                 <NuxtLink to="/partnership" class="vacancies-partnership-link link-underline-solid">Партнёрка</NuxtLink>
             </div>
+            <div class="vacancies-partnership-link-wrapper">
+                <NuxtLink to="/details" class="vacancies-partnership-link link-underline-solid">Реквизиты</NuxtLink>
+            </div>
         </div>
 
         <div class="copyright">©&nbsp;2017- 2021</div>
@@ -61,7 +64,7 @@ footer div {
 }
 
 footer>div:not(:first-child) {
-    margin-left: 8rem;
+    margin-left: 6rem;
 }
 
 .contacts-footer-inner:not(:last-child),
