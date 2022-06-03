@@ -64,5 +64,18 @@ export default {
 
 @media (min-width: 1340px) {}
 
-@media (max-width: 460px) {}
+@media (max-width: 460px) {
+  .we-design {
+    margin-top: 20rem;
+  }
+
+  .we-design .mainpage-section-header-wrapper {
+      margin-left: 0;
+      min-height: 30rem;
+  }
+
+  .we-design .mainpage-section-header {
+      top: 8rem;
+  }
+}
 </style>

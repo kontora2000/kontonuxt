@@ -160,5 +160,9 @@ export default {
   .team-cont {
     margin: 20rem 0.8rem 0;
   }
+
+  .player-name {
+    font-size: 4rem;
+  }
 }
 </style>

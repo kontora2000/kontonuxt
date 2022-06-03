@@ -3,7 +3,7 @@
         <h1 class="mainpage-section-header">Если захотели <br class="only-desktop"/>с&nbsp;нами связаться&nbsp;:)</h1>
         <div class="big-contacts-inner">
             <div class="tel-email-wrapper">
-                <span>+7&nbsp;988&nbsp;668-14-88</span>
+                <a class="link-tel" href="tel:+79886881488">+7&nbsp;988&nbsp;668-14-88</a>
                 <a class="link-email link-underline-solid" href="mailto:mail@prostokontora.ru">mail@prostokontora.ru</a>
             </div>
             <div class="social-links-wrapper">
@@ -60,6 +60,13 @@ export default {
         line-height: 3.6rem;
     }
 
+    .big-contacts-inner .link-tel {
+        color: var(--Black100);
+    }
+    .big-contacts-inner .link-tel:hover {
+        color: var(--Blue100);
+    }
+
     .big-contacts-inner .link-email.link-underline-solid {
         border-bottom-width: 2px;
         border-bottom-color: var(--Black16);
@@ -103,5 +110,35 @@ export default {
 
 
 
-    @media (max-width: 460px) {}
+    @media (max-width: 460px) {
+        .big-contacts-cont {
+            margin-left: .8rem;
+        }
+
+        .big-contacts-inner {
+            flex-direction: column;
+            margin-top: 4rem;
+        }
+
+        .big-contacts-inner .tel-email-wrapper {
+            flex-direction: column;
+        }
+        .big-contacts-inner .link-tel{
+            margin-bottom: .8rem;
+        }
+
+        .big-contacts-inner .link-tel,
+        .big-contacts-inner .link-email.link-underline-solid {
+            width: fit-content;
+        }
+
+        .big-contacts-inner .link-email.link-underline-solid {
+            margin-left: 0;
+        }
+
+        .big-contacts-inner .social-links-wrapper {
+            margin-left: 0;
+            margin-top: 6.4rem;
+        }
+    }
 </style>

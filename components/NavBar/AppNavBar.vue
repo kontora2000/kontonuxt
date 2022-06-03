@@ -30,3 +30,9 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+  .we-design .nav-main {
+      position: relative;
+  }
+</style>

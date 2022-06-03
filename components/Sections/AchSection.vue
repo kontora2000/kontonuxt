@@ -87,4 +87,46 @@ export default {
     font-size: 2rem;
     line-height: 2.8rem;
 }
+
+@media (max-width: 460px) {
+    .achievements-cont {
+        margin-left: .8rem;
+    }
+
+    .achiev-items-wrapper {
+        display: grid;
+        grid-row-gap: 4rem;
+    }
+
+    .achiev-item:not(:last-child) {
+        margin-right: 0;
+    }
+
+    .achiev-item:first-child {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .achiev-item:nth-child(2) {
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
+
+    .achiev-item:nth-child(3) {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    .achiev-item:last-child {
+        display: none;
+    }
+
+    .achiev-about-wrapper {
+        margin-top: 6rem;
+    }
+
+    .achiev-about-item:nth-child(1) {
+        margin-right: 0;
+        max-width: 100%;
+    }
+}
 </style>

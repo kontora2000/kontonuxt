@@ -38,5 +38,10 @@ export default {
   .clients-cont {
       margin: 20rem .8rem 0;
   }
+
+    .clients-list {
+        font-size: 4rem;
+        line-height: 4.4rem;
+    }
 }
 </style>

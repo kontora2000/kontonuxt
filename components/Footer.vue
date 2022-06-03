@@ -82,5 +82,15 @@ footer>div:not(:first-child) {
 
 
 
-@media (max-width: 460px) {}
+@media (max-width: 460px) {
+    footer {
+        margin: 0 .8rem;
+        padding: 0 0 2rem;
+        width: calc(100vw - 1.6rem);
+    }
+
+    footer>div:not(:first-child) {
+        margin-left: 0;
+    }
+}
 </style>

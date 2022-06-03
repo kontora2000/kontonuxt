@@ -104,5 +104,10 @@ export default {
 }
 
 @media (max-width: 460px) {
+  .nav-main-link-wrapper {
+      font-size: 3.6rem;
+      height: 4rem;
+      line-height: 4rem;
+  }
 }
 </style>

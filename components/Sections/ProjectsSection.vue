@@ -315,9 +315,16 @@ export default {
 @media (min-width: 1340px) {}
 
 @media (max-width: 460px) {
+  .works-cont {
+    margin-left: 0;
+    margin-top: 16rem;
+    padding: 0;
+    width: 100vw;
+  }
   .works-wrapper {
-      grid-column-gap: 0;
-      grid-template-columns: 100%;
+      display: flex;
+      flex-direction: column;
+      grid-row-gap: 0;
   }
 
   .works-wrapper > .mainpage-section-header {

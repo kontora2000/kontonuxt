@@ -108,5 +108,35 @@ export default {
 
 
 
-@media (max-width: 460px) {}
+@media (max-width: 460px) {
+  .top-section {
+    display: grid;
+    font-size: 1.3rem;
+    margin: 0 .8rem 0 12rem;
+    top: 2rem;
+    width: calc(100vw - 12.8rem);
+  }
+
+  .about-cont {
+        grid-column: 1/3;
+        grid-row: 1/2;
+        left: 0;
+        position: relative;
+        z-index: 2;
+    }
+
+  .contacts-top-section {
+      grid-column: 2/3;
+      grid-row: 2/3;
+      margin-right: 0;
+      margin-top: .8rem;
+  }
+
+  .social-top-section {
+      grid-row: 2/3;
+      grid-column: 1/2;
+      margin-right: 0;
+      margin-top: .8rem;
+  }
+}
 </style>
