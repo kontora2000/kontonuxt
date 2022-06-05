@@ -51,11 +51,13 @@ export default {
 }
 
 .img-on-cursor img {
+  border-radius: 300px;
   position: relative;
-   max-height: 8rem;
-   max-width: 8rem;
-   border-radius: 100px;
-   transform: scale(2);
+  max-height: 8rem;
+  height: 100%;
+  max-width: 8rem;
+  width: 100%;
+  transform: scale(2);
 }
 
 </style>

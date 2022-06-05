@@ -30,7 +30,7 @@ export default {
 
 <style scoped>
 .we-design {
-  margin-top: 12rem;
+  margin-top: 9.2rem;
 }
 
 .we-design .mainpage-section-header-wrapper {
@@ -45,10 +45,12 @@ export default {
     mix-blend-mode: difference;
     position: sticky;
     position: -webkit-sticky;
-    top: 20rem;
+    top: 18rem;
 }
 .we-design .mainpage-section-header::after {
     background-color: var(--White100);
+    margin-left: 0;
+    width: 15.5rem;
 }
 
 .we-design .nav-main {
@@ -66,16 +68,32 @@ export default {
 
 @media (max-width: 460px) {
   .we-design {
-    margin-top: 20rem;
+    height: fit-content;
+    min-height: fit-content;
+    margin-top: 12rem;
   }
 
   .we-design .mainpage-section-header-wrapper {
       margin-left: 0;
-      min-height: 30rem;
+      min-height: 29.6rem;
   }
 
   .we-design .mainpage-section-header {
       top: 8rem;
+  }
+
+  .we-design .mainpage-section-header::after {
+    width: 4.8rem;
+  }
+}
+
+@media (max-width: 330px) {
+  .we-design .mainpage-section-header-wrapper {
+    min-height: 27.6rem;
+  }
+  .we-design .mainpage-section-header::after {
+    margin: 0;
+    width: 1.6rem;
   }
 }
 </style>

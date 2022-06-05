@@ -39,9 +39,16 @@ export default {
       margin: 20rem .8rem 0;
   }
 
-    .clients-list {
-        font-size: 4rem;
-        line-height: 4.4rem;
-    }
+  .clients-list {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+}
+
+@media (max-width: 330px) {
+  .clients-list {
+    font-size: 3.2rem;
+    line-height: 3.2rem;
+  }
 }
 </style>

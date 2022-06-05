@@ -637,9 +637,11 @@ header a.link-underline-dashed:hover {
 
 }
 
-
-
 @media (max-width: 460px) {
+    body {
+        font-size: 1.4rem;
+    }
+
     main>section {
         margin: 0 .8rem;
         width: calc(100vw - 1.6rem);
@@ -650,13 +652,23 @@ header a.link-underline-dashed:hover {
         line-height: 4rem;
     }
 
+    h2 {
+        font-size: 2.8rem;
+        line-height: 3.6rem;
+    }
+
+    .icon-svg.icon-close-svg {
+        max-width: 3.2rem;
+        max-height: 3.2rem;
+    }
+
     header {
         padding: 1.6rem .8rem;
     }
 
     .mainpage-section-header::after {
         height: .3rem;
-        margin: 0 .4rem 0 0;
+        margin: 0 .4rem;
         top: -.8rem;
         width: 3rem;
     }
@@ -669,5 +681,41 @@ header a.link-underline-dashed:hover {
         right: .8rem;
         top: 1.2rem;
     }
+}
 
+@media (max-width: 380px) {
+    body {
+        font-size: 1.3rem;
+    }
+
+    h1 {
+        font-size: 3.2rem;
+        line-height: 4rem;
+    }
+
+    .section-subheader {
+        font-size: 2.4rem;
+        line-height: 3.2rem;
+    }
+}
+
+@media (max-width: 330px) {
+    body {
+        font-size: 1.2rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+        line-height: 3.6rem;
+    }
+
+    h2 {
+        font-size: 2.6rem;
+        line-height: 3.2rem;
+    }
+
+    h4 {
+        font-size: 2rem;
+        line-height: 2.8rem;
+    }
 }

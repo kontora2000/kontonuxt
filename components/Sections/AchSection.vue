@@ -2,16 +2,16 @@
     <section class="achievements-cont">
         <div class="achiev-items-wrapper">
             <div class="achiev-item">
-                <div class="achiev-digit">3</div>
-                <div class="achiev-text">года офигенной<br />работы</div>
+                <div class="achiev-digit">10</div>
+                <div class="achiev-text">лет опыта<br />в&nbsp;дизайне <br />и&nbsp;разработке</div>
             </div>
             <div class="achiev-item">
                 <div class="achiev-digit">100</div>
                 <div class="achiev-text">реализованных<br />проектов</div>
             </div>
             <div class="achiev-item">
-                <div class="achiev-digit">4</div>
-                <div class="achiev-text">человека<br />в&nbsp;команде</div>
+                <div class="achiev-digit">5</div>
+                <div class="achiev-text">человек<br />в&nbsp;команде</div>
             </div>
             <div class="achiev-item">
                 <div class="achiev-digit">7</div>
@@ -19,7 +19,7 @@
             </div>
         </div>
         <div class="achiev-about-wrapper">
-            <h4 class="achiev-about-item">Работаем с&nbsp;2017. Имеем большой опыт разработки сайтов и&nbsp;приложений для&nbsp;СМИ и&nbsp;онлайн&thinsp;–&thinsp;коммерции</h4>
+            <h4 class="achiev-about-item">Работаем командой с&nbsp;2018. Скопили огромную кучу опыта разработки сайтов и&nbsp;приложений для&nbsp;СМИ и&nbsp;онлайн&hairsp;–&hairsp;коммерции.</h4>
             <div class="achiev-about-item">Кек</div>
         </div>
     </section>
@@ -46,7 +46,7 @@ export default {
     display: inline-flex;
 }
 .achiev-item:not(:last-child) {
-    margin-right: 8.8rem;
+    margin-right: 7.6rem;
 }
 
 .achiev-digit {
@@ -86,11 +86,13 @@ export default {
 .achiev-about-item:nth-child(2) {
     font-size: 2rem;
     line-height: 2.8rem;
+    vertical-align: top;
 }
 
 @media (max-width: 460px) {
     .achievements-cont {
         margin-left: .8rem;
+        margin-top: 24rem;
     }
 
     .achiev-items-wrapper {
@@ -120,6 +122,11 @@ export default {
         display: none;
     }
 
+    .achiev-digit {
+        font-size: 11rem;
+        line-height: 9.2rem;
+    }
+
     .achiev-about-wrapper {
         margin-top: 6rem;
     }
@@ -127,6 +134,27 @@ export default {
     .achiev-about-item:nth-child(1) {
         margin-right: 0;
         max-width: 100%;
+    }
+
+    .achiev-about-item:nth-child(2) {
+        margin-top: 2.4rem;
+    }
+}
+
+@media (max-width: 330px) {
+    .achiev-digit {
+        font-size: 9.6rem;
+        line-height: 8rem;
+    }
+
+    .achiev-about-wrapper {
+        margin-top: 4rem;
+    }
+
+    .achiev-about-item:nth-child(2) {
+        font-size: 1.6rem;
+        line-height: 2rem;
+        margin-top: 2rem;
     }
 }
 </style>

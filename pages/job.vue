@@ -30,7 +30,7 @@
         </div>
       </div>
     </section>
-    <section class="page-cont-vacancies page-cont">
+    <section class="page-cont-vacancies page-cont-vacancies-write-us page-cont">
       <h2>Если вдруг вы делаете крутые штуки и&nbsp;ищете свою компанию, но&nbsp;тут&nbsp;нет&nbsp;вашей вакансии&nbsp;— напишите нам на&nbsp;<a class="link-underline-solid" href="mailto:job@prostokontora.ru?subject=Хочу с вами работать">job@prostokontora.ru</a></h2>
     </section>
   </main>
@@ -86,5 +86,29 @@ export default {
 .vacancy-cont-button-send {
     font-size: 2rem;
     margin-top: 1.8rem;
+}
+
+@media (max-width: 460px) {
+  .vacancies-wrapper {
+    grid-template-columns: 100%;
+    grid-row-gap: 4rem;
+    margin-top: 3.2rem;
+  }
+
+  .vacancy-cont {
+    background-color: var(--Black6);
+    border-radius: 20px;
+    padding: 1.6rem 1.2rem 2rem;
+  }
+
+  .page-cont-vacancies>h2 {
+    line-height: 3.6rem;
+  }
+
+  .page-cont-vacancies-write-us {
+      margin-top: 8rem;
+      margin-bottom: 12rem;
+      min-height: fit-content;
+  }
 }
 </style>

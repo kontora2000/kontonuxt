@@ -5,7 +5,6 @@
 
 
 <script>
-
 export default {
   name: 'FlagSection',
 }
@@ -34,15 +33,20 @@ export default {
 }
 
 
-
 @media (min-width: 1340px) {}
-
 
 
 @media (max-width: 460px) {
   .bg-black-flag {
-    width: 100vw;
+    bottom: -8rem;
     margin-left: 0;
+    width: 100vw;
+  }
+}
+
+@media (max-width: 330px) {
+  .bg-black-flag {
+    bottom: -16rem;
   }
 }
 </style>

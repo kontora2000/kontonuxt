@@ -65,4 +65,11 @@ export default {
 .details-cont h4 {
     font-family: var(--font-serif);
 }
+
+@media (max-width: 460px) {
+  .details-wrapper {
+    grid-template-columns: 100%;
+    margin-top: 3.2rem;
+  }
+}
 </style>

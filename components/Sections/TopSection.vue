@@ -111,25 +111,35 @@ export default {
 @media (max-width: 460px) {
   .top-section {
     display: grid;
-    font-size: 1.3rem;
-    margin: 0 .8rem 0 12rem;
-    top: 2rem;
-    width: calc(100vw - 12.8rem);
+    margin-left: .8rem;
+    width: calc(100vw - 1.6rem);
+    top: 0;
+    justify-content: space-between;
   }
 
   .about-cont {
-        grid-column: 1/3;
-        grid-row: 1/2;
-        left: 0;
-        position: relative;
-        z-index: 2;
-    }
+    grid-column: 1/3;
+    grid-row: 2/3;
+    left: 0;
+    margin-top: 1.6rem;
+    position: relative;
+    z-index: 2;
+  }
 
   .contacts-top-section {
-      grid-column: 2/3;
-      grid-row: 2/3;
-      margin-right: 0;
-      margin-top: .8rem;
+    display: flex;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin: 2.4rem 0 0 0;
+    width: calc(12rem + 1.2rem + 14rem);
+  }
+
+  .contacts-top-section>div {
+    display: inline-flex;
+  }
+  .contacts-top-section>div:not(:last-child),
+  .social-top-section>div:not(:last-child) {
+      margin: 0 1.2rem 0 0;
   }
 
   .social-top-section {
@@ -137,6 +147,24 @@ export default {
       grid-column: 1/2;
       margin-right: 0;
       margin-top: .8rem;
+
+      display: none;
+  }
+}
+
+@media (max-width: 380px) {
+    .contacts-top-section {
+      width: calc(11rem + 1.2rem + 13.1rem);
+    }
+}
+
+@media (max-width: 330px) {
+  .contacts-top-section {
+    width: 16.3rem;
+  }
+
+  .tel.contacts-top-section-inner {
+    display: none;
   }
 }
 </style>

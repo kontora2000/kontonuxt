@@ -110,4 +110,18 @@ export default {
       line-height: 4rem;
   }
 }
+
+@media (max-width: 380px) {
+  .nav-main-link-wrapper {
+    font-size: 3.2rem;
+  }
+}
+
+@media (max-width: 330px) {
+  .nav-main-link-wrapper {
+    font-size: 3rem;
+    height: 3.6rem;
+    line-height: 3.6rem;
+  }
+}
 </style>

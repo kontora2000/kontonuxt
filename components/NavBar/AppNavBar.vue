@@ -35,4 +35,8 @@ export default {
   .we-design .nav-main {
       position: relative;
   }
+
+  @media (max-width: 330px) {
+    .we-design .nav-main {}
+  }
 </style>

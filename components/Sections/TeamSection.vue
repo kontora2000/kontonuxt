@@ -4,59 +4,17 @@
       Команда
     </h1>
     <div class="player-cont-wrapper">
-      <team-player image="/img/player-1.jpg" instagram-profile="stasmyhero" position="Программист">
-        Стас Ермаков
-      </team-player>
-      <div class="player-cont">
-        <picture class="player-photo">
-          <img class="player-photo-img" src="img/player-1.png">
-        </picture>
-        <div class="player-name-cont">
-          <div class="player-name">
-            <a
-              class="link-underline-solid"
-              href="https://instagram.com/glazzzgow"
-              target="_blank"
-            >Алина Мина</a>
-          </div>
-          <sup class="player-job-title">Дизайнер</sup>
-        </div>
-      </div>
-      <div class="player-cont">
-        <picture class="player-photo">
-          <img class="player-photo-img" src="img/player-1.png">
-        </picture>
-        <div class="player-name-cont">
-          <div class="player-name">
-            <a
-              class="link-underline-solid"
-              href="https://artemon.gq"
-              target="_blank"
-            >Артём Греков</a>
-          </div>
-          <sup class="player-job-title">Дизайнер</sup>
-        </div>
-      </div>
-      <div class="player-cont">
-        <picture class="player-photo">
-          <img class="player-photo-img" src="img/player-1.png">
-        </picture>
-        <div class="player-name-cont">
-          <div class="player-name">
-            <a
-              class="link-underline-solid"
-              href="https://instagram.com/10nce"
-              target="_blank"
-            >Олег Ермаков</a>
-          </div>
-          <sup class="player-job-title">Клининг-менеджер</sup>
-        </div>
-      </div>
+      <team-player image="/img/player-1.jpg" instagram-profile="stasmyhero" position="Программист"
+      >Стас Ермаков</team-player>
+      <team-player image="/img/player-1.jpg" instagram-profile="glazzzgow" position="Дизайнер"
+      >Алина Мина</team-player>
+      <team-player image="/img/player-1.jpg" instagram-profile="greeekov" position="Дизайнер"
+      >Артём Греков</team-player>
+      <team-player image="/img/player-1.jpg" instagram-profile="10nce" position="Клининг-менеджер"
+      >Олег Ермаков</team-player>
     </div>
     <div class="button-vacancies-wrapper">
-      <NuxtLink to="/job" class="button-vacancies button">
-        3&nbsp;вакансии
-      </NuxtLink>
+      <NuxtLink to="/job" class="button-vacancies button">+&nbsp;3&nbsp;вакансии</NuxtLink>
     </div>
   </section>
 </template>
@@ -147,10 +105,9 @@ export default {
 .button-vacancies-wrapper {
   display: inline-block;
 }
-.button-vacancies-wrapper::before {
-  content: "+";
-  font-size: 2.4rem;
-  margin-right: 0.4rem;
+
+.button-vacancies {
+  padding: 2.4rem 2rem 2.4rem 1.8rem;
 }
 
 @media (min-width: 1340px) {
@@ -161,8 +118,49 @@ export default {
     margin: 20rem 0.8rem 0;
   }
 
+  .player-cont {
+    display: block;
+    margin-top: 3.2rem;
+    margin-right: 0;
+  }
+
+  .player-cont:not(:first-child) {
+    margin-top: 3.2rem;
+  }
+
+  .player-photo {
+    top: -1.2rem;
+    vertical-align: middle;
+  }
+
+  .player-name-cont {
+    font-size: 2.8rem;
+    line-height: 2.8rem;
+  }
+
   .player-name {
-    font-size: 4rem;
+    font-size: 2.8rem;
+    line-height: 2.8rem;
+  }
+
+  .player-cont:not(:last-child) .player-name::after {
+    display: none;
+  }
+
+  .player-job-title {
+    display: block;
+    font-size: 1.4rem;
+    margin-left: 0;
+    margin-top: .8rem;
+    top: 0;
+    vertical-align: text-bottom;
+  }
+  .player-cont:last-child .player-job-title {
+    margin-left: 0;
+  }
+
+  .button-vacancies-wrapper {
+    margin-top: 2rem;
   }
 }
 </style>
