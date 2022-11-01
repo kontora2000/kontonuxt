@@ -11,7 +11,7 @@
 
       <div class="vacancies-wrapper">
         <div class="vacancy-cont">
-            <h4>Амбициозный дизайнер интерфейсов</h4>
+            <h4>Аккуратный дизайнер интерфейсов</h4>
             <p>Создание и развитие CMS для небольших проектов студии. Умение писать понятный код. Понимание оптимизации производительности фреймворка.</p>
             <p>Вы легко работаете с:<br> PHP, Laravel, Eloquent CMS, Nginx и Apache</p>
             <a class="vacancy-cont-button-send button" href="mailto:job@prostokontora.ru?subject=Амбициозный дизайнер интерфейсов">Заявить о себе</a>
@@ -23,10 +23,10 @@
             <a class="vacancy-cont-button-send button" href="mailto:job@prostokontora.ru?subject=Педантичный разработчик">Откликнуться</a>
         </div>
         <div class="vacancy-cont">
-            <h4>Офигенный СММщик</h4>
+            <h4>Топовый 3Дшник</h4>
             <p>Создание и развитие CMS для небольших проектов студии. Умение писать понятный код. Понимание оптимизации производительности фреймворка.</p>
             <p>Вы легко работаете с:<br> PHP, Laravel, Eloquent CMS, Nginx и Apache</p>
-            <a class="vacancy-cont-button-send button" href="mailto:job@prostokontora.ru?subject=Офигенный СММщик">Отправить резюме</a>
+            <a class="vacancy-cont-button-send button" href="mailto:job@prostokontora.ru?subject=Топовый 3Дшник">Отправить резюме</a>
         </div>
       </div>
     </section>

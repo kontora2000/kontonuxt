@@ -1,10 +1,10 @@
 <template>
     <footer>
         <div v-if="$route.path!=='/' && $route.path!==''" class="contacts contacts-footer">
-            <div class="tel contacts-footer-inner"><a href="tel:+79886681488">+7 988 668-14-88</a></div>
             <div class="email-cont contacts-footer-inner">
                 <a class="link-email link-underline-solid" href="mailto:mail@prostokontora.ru">mail@prostokontora.ru</a>
             </div>
+            <div class="tel contacts-footer-inner"><a href="tel:+79886681488">+7 988 668-14-88</a></div>
         </div>
 
         <div v-if="$route.path!=='/' && $route.path!==''" class="social-links-footer">
@@ -23,7 +23,7 @@
             <div class="vacancies-partnership-link-wrapper">
                 <NuxtLink to="/job" class="vacancies-partnership-link link-underline-solid">Вакансии</NuxtLink>
             </div>
-            <div class="vacancies-partnership-link-wrapper">
+            <div v-show="false" class="vacancies-partnership-link-wrapper">
                 <NuxtLink to="/partnership" class="vacancies-partnership-link link-underline-solid">Партнёрка</NuxtLink>
             </div>
             <div class="vacancies-partnership-link-wrapper">
@@ -31,7 +31,7 @@
             </div>
         </div>
 
-        <div class="copyright">©&nbsp;2018&hairsp;—&hairsp;2022</div>
+        <div class="copyright">©&nbsp;2018&thinsp;–&thinsp;2022</div>
     </footer>
 </template>
 
@@ -89,6 +89,7 @@ footer div {
 }
 
 .copyright {
+    cursor: default;
     float: right;
 }
 

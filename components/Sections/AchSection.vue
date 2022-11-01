@@ -19,8 +19,8 @@
             </div>
         </div>
         <div class="achiev-about-wrapper">
-            <h4 class="achiev-about-item">Работаем командой с&nbsp;2018. Скопили огромную кучу опыта разработки сайтов и&nbsp;приложений для&nbsp;СМИ и&nbsp;онлайн&hairsp;–&hairsp;коммерции.</h4>
-            <div class="achiev-about-item">Кек</div>
+            <h4 class="achiev-about-item">Специализируемся на сайтах и&nbsp;приложениях для&nbsp;СМИ и&nbsp;онлайн&hairsp;–&hairsp;коммерции.</h4>
+            <p class="achiev-about-item">Проводим предпроектные исследования и изучаем ваш опыт. С помощью дизайна в первую очередь решаем бизнес-задачи, разрабатываем. И можем подключиться к процессу на любом этапе.</p>
         </div>
     </section>
 </template>
@@ -38,7 +38,8 @@ export default {
 <style scoped>
 .achievements-cont {
     margin-left: 18%;
-    margin-top: 28rem;
+    margin-right: 2.8rem;
+    margin-top: 20rem;
     min-height: 64vh;
 }
 
@@ -72,6 +73,8 @@ export default {
 }
 
 .achiev-about-wrapper {
+    display: flex;
+    justify-content: space-between;
     margin-top: 7.2rem;
 }
 
@@ -86,6 +89,8 @@ export default {
 .achiev-about-item:nth-child(2) {
     font-size: 2rem;
     line-height: 2.8rem;
+    margin: .35rem 0 0;
+    max-width: calc(100% - 56rem);
     vertical-align: top;
 }
 

@@ -3,11 +3,12 @@
     <Flag-section />
     <Top-section />
     <We-design />
+    <ButtonOrder />
     <Achievements />
-    <ProjectsSection />
+    <!--ProjectsSection /-->
     <Clients />
-    <ImgOnCursor />
-    <Team />
+    <!--ImgOnCursor /-->
+    <!--Team /-->
     <Contacts />
   </main>
 </template>
@@ -16,6 +17,7 @@
 import FlagSection from '~/components/Sections/FlagSection';
 import TopSection from '~/components/Sections/TopSection';
 import WeDesign from '~/components/Sections/DesSection';
+import ButtonOrder from '~/components/ButtonOrder';
 import Achievements from '~/components/Sections/AchSection';
 import Clients from '~/components/Sections/ClientSection';
 import ProjectsSection from '~/components/Sections/ProjectsSection.vue';
@@ -28,6 +30,7 @@ export default {
     FlagSection,
     TopSection,
     WeDesign,
+    ButtonOrder,
     Achievements,
     ProjectsSection,
     Clients,

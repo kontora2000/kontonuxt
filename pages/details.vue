@@ -12,7 +12,38 @@
       <div class="details-wrapper">
         <div class="details-cont">
             <h4>ООО&thinsp;«Просто контора»</h4>
-            <p>Кек</p>
+            <div class="details-cont-row">
+              <p>
+                <span>ИНН</span><br>
+                <span>2311323463</span>
+              </p>
+              <p>
+                <span>КПП</span><br>
+                <span>231101001</span>
+              </p>
+            </div>
+            <p>
+              <span>Расчётный счёт (₽)</span><br>
+              <span>40702810101500102474</span>
+            </p>
+            <p>
+              <span>Название банка</span><br>
+              <span>ТОЧКА ПАО БАНКА «ФК ОТКРЫТИЕ»</span>
+            </p>
+            <div class="details-cont-row">
+              <p>
+                <span>Город</span><br>
+                <span>г. Москва</span>
+              </p>
+              <p>
+                <span>БИК</span><br>
+                <span>044525999</span>
+              </p>
+            </div>
+            <p>
+              <span>Корр.&nbsp;счёт</span><br>
+              <span>30101810845250000999</span>
+            </p>
         </div>
       </div>
     </section>
@@ -64,6 +95,19 @@ export default {
 
 .details-cont h4 {
     font-family: var(--font-serif);
+}
+
+.details-cont-row {
+    display: flex;
+}
+
+.details-cont p {
+    margin-top: 2.4rem;
+}
+
+.details-cont-row>p:last-child {
+    position: absolute;
+    left: 30%;
 }
 
 @media (max-width: 460px) {

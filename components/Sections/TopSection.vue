@@ -1,13 +1,13 @@
 <template>
   <section class="top-section">
     <div class="about-cont">
-      <div class="about">Независимая команда дизайнеров и&nbsp;разработчиков.
+      <div class="about">Топовая команда дизайнеров и&nbsp;разрабов.
         <br>Разбросаны по&nbsp;всей <span class="red-star">★</span>&hairsp;России, работаем по&nbsp;всему миру
       </div>
-      <div class="about-vacancies-partnership" v-show="false">
+      <div class="about-vacancies-partnership">
         Сейчас открыты
-        <nuxt-link class="link-underline-dashed" to="/job">3&nbsp;вакансии</nuxt-link> и&nbsp;работает
-        <nuxt-link class="link-underline-dashed" to="/partnership">партнёрская программа</nuxt-link>
+        <nuxt-link class="link-underline-dashed" to="/job">3&nbsp;вакансии</nuxt-link><span v-show="false"> и&nbsp;работает
+        <nuxt-link class="link-underline-dashed" to="/partnership">партнёрская программа</nuxt-link></span>
       </div>
     </div>
     <div class="contacts contacts-top-section">
@@ -47,9 +47,12 @@ export default {
     color: var(--White32);
     min-height: 0;
     height: 10rem;
+    padding: 0 2.8rem;
     position: absolute;
     width: 100%;
     top: 3.6rem;
+    mix-blend-mode: difference;
+    z-index: 2;
 }
 
 .top-section a { 
@@ -61,7 +64,7 @@ export default {
 
 .top-section a.link-underline-solid,
 .top-section a.link-underline-dashed { 
-    border-bottom-color: var(--White16);
+    border-bottom-color: var(--White20);
 }
 .top-section a.link-underline-solid:hover,
 .top-section a.link-underline-dashed:hover { 
@@ -69,6 +72,8 @@ export default {
 }
 
 .about-cont {
+    line-height: 1.6rem;
+    margin-top: -1px;
     position: absolute;
     left: 18%;
     z-index: 2;
@@ -90,7 +95,7 @@ export default {
 }
 
 .contacts-top-section {
-  margin-right: 2.8rem;
+
 }
 
 .social-top-section {

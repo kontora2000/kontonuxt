@@ -1,7 +1,7 @@
 <template>
   <section class="clients-cont">
     <h1 class="mainpage-section-header">Клиенты</h1>
-    <span class="clients-list">Interbunker Group of&nbsp;Companies, Ренессанс Страхование, Princess, Нескучный сад, Фрутшоп</span>
+    <span class="clients-list">Interbunker, FinFort, Zvonok.com, Princess, Ренессанс Страхование, АКБшка.рф, Нескучный сад, Фрутшоп</span>
   </section>
 </template>
 
@@ -18,7 +18,8 @@ export default {
 <style scoped>
 .clients-cont {
     margin-left: 18%;
-    margin-top: 40rem;
+    /*margin-top: 40rem;*/
+    margin-top: 12rem;
     margin-right: 2.8rem;
 }
 

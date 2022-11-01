@@ -1,6 +1,6 @@
 <template>
     <section class="big-contacts-cont">
-        <h1 class="mainpage-section-header">Если захотели <br class="only-desktop"/>с&nbsp;нами связаться&nbsp;:)</h1>
+        <h1 class="mainpage-section-header">Если захотели <br class="only-desktop"/>связаться с&nbsp;нами&nbsp;:)</h1>
         <div class="big-contacts-inner">
             <div class="tel-email-wrapper">
                 <a class="link-tel" href="tel:+79886881488">+7&nbsp;988&nbsp;668-14-88</a>
@@ -8,21 +8,21 @@
             </div>
             <div class="social-links-wrapper">
                 <div class="social-link-wrapper">
-                    <a class="social-link" href="#">
+                    <a class="social-link" href="https://t.me/kontoragram">
                         <svg class="icon-svg icon-telegram-svg">
                             <use xlink:href="sprite.svg#icon-telegram" />
                         </svg>
                     </a>
                 </div>
                 <div class="social-link-wrapper">
-                    <a class="social-link" href="#">
+                    <a class="social-link" href="https://wa.me/79886681488">
                         <svg class="icon-svg icon-whatsapp-svg">
                             <use xlink:href="sprite.svg#icon-whatsapp" />
                         </svg>
                     </a>
                 </div>
                 <div class="social-link-wrapper">
-                    <a class="social-link" href="#">
+                    <a class="social-link" href="https://instagram.com/kontoragram">
                         <svg class="icon-svg icon-instagram-svg">
                             <use xlink:href="sprite.svg#icon-instagram" />
                         </svg>
@@ -41,7 +41,7 @@ export default {
 
 <style scoped>
 .big-contacts-cont {
-    margin-top: 32rem;
+    margin-top: 20rem;
     margin-left: 18%;
 }
 
@@ -50,7 +50,7 @@ export default {
 }
 
 .big-contacts-inner {
-    margin-top: 16rem;
+    margin-top: 12rem;
     display: flex;
 }
 
@@ -62,6 +62,7 @@ export default {
 
 .big-contacts-inner .link-tel {
     color: var(--Black100);
+    letter-spacing: -.03em;
 }
 .big-contacts-inner .link-tel:hover {
     color: var(--Blue100);

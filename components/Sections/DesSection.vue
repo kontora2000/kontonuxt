@@ -2,40 +2,33 @@
   <section class="we-design">
     <div class="mainpage-section-header-wrapper">
       <h1 class="mainpage-section-header">
-        Делаем
+        Делаем приложения, <br />сайты, айдентику, рекламу <br />и&nbsp;контент для&nbsp;соцсетей
       </h1>
     </div>
     <app-nav-bar />
-    <div v-show="false" class="button-buy-design-wrapper">
-      <nuxt-link to="/order" class="button-buy-design button">
-        <span class="button-buy-design-sign"> 
-          Купить
-          <br>дизайн!
-        </span>
-      </nuxt-link>
-    </div>
   </section>
 </template>
 
 <script>
-import AppNavBar from '../NavBar/AppNavBar.vue'
+/*import AppNavBar from '../NavBar/AppNavBar.vue'
 
 export default {
   name: 'WeDesign',
   components: {
     AppNavBar,
   },
-}
+}*/
 </script>
 
 <style scoped>
 .we-design {
   margin-top: 9.2rem;
+  margin-left: 18%;
+  margin-right: 2.8rem;
 }
 
 .we-design .mainpage-section-header-wrapper {
     display: inline-block;
-    margin-left: 18%;
     min-height: 43rem;
     vertical-align: top;
 }
@@ -43,14 +36,15 @@ export default {
 .we-design .mainpage-section-header {
     color: var(--White100);
     mix-blend-mode: difference;
-    position: sticky;
+    /*position: sticky;
     position: -webkit-sticky;
-    top: 18rem;
+    top: 18rem;*/
 }
 .we-design .mainpage-section-header::after {
     background-color: var(--White100);
     margin-left: 0;
     width: 15.5rem;
+    display: none;
 }
 
 .we-design .nav-main {
