@@ -1,7 +1,9 @@
 <template>
   <section class="clients-cont">
-    <h1 class="mainpage-section-header">Клиенты</h1>
-    <span class="clients-list">Interbunker, FinFort, Zvonok.com, Princess, Ренессанс Страхование, АКБшка.рф, Нескучный сад, Фрутшоп</span>
+    <div class="section-inner">
+      <h1 class="mainpage-section-header">Клиенты</h1>
+      <span class="clients-list">Interbunker, FinFort, Zvonok.com, Princess, Ренессанс Страхование, АКБшка.рф, Нескучный сад, Фрутшоп</span>
+    </div>
   </section>
 </template>
 
@@ -16,12 +18,7 @@ export default {
 
 
 <style scoped>
-.clients-cont {
-    margin-left: 18%;
-    /*margin-top: 40rem;*/
-    margin-top: 12rem;
-    margin-right: 2.8rem;
-}
+.clients-cont { }
 
 .clients-list {
     font-family: var(--font-serif);
@@ -35,9 +32,9 @@ export default {
 
 
 
-@media (max-width: 460px) {
+@media (max-width: 500px) {
   .clients-cont {
-      margin: 20rem .8rem 0;
+      margin: 20rem 0 0;
   }
 
   .clients-list {

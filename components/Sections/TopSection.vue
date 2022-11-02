@@ -1,42 +1,26 @@
 <template>
   <section class="top-section">
-    <div class="about-cont">
-      <div class="about">Топовая команда дизайнеров и&nbsp;разрабов.
-        <br>Разбросаны по&nbsp;всей <span class="red-star">★</span>&hairsp;России, работаем по&nbsp;всему миру
-      </div>
-      <div class="about-vacancies-partnership">
-        Сейчас открыты
-        <nuxt-link class="link-underline-dashed" to="/job">3&nbsp;вакансии</nuxt-link><span v-show="false"> и&nbsp;работает
-        <nuxt-link class="link-underline-dashed" to="/partnership">партнёрская программа</nuxt-link></span>
-      </div>
+    <div class="section-inner">
+      <TopAboutContacts />
+      <WeDesign />
     </div>
-    <div class="contacts contacts-top-section">
-      <div class="tel contacts-top-section-inner">
-        <a href="tel:+79886681488">+7&thinsp;988&thinsp;668-14-88</a>
-      </div>
-      <div class="email-cont contacts-top-section-inner">
-        <a class="link-email link-underline-solid" href="mailto:mail@prostokontora.ru">mail@prostokontora.ru</a>
-      </div>
-    </div>
-    <div class="social-top-section">
-      <div class="social-top-section-inner social-link-wrapper">
-        <a class="social-link link-underline-solid" href="https://instagram.com/kontoragram/">Instagram</a>
-      </div>
-      <div class="social-top-section-inner social-link-wrapper">
-        <a class="social-link link-underline-solid" href="https://t.me/kontoragram">Telegram</a>
-      </div>
-      <div class="social-top-section-inner social-link-wrapper">
-        <a class="social-link link-underline-solid" href="https://wa.me/79886681488">WhatsApp</a>
-      </div>
-    </div>
+      <FlagBlock />
   </section>
 </template>
 
 
 
 <script>
+import TopAboutContacts from '~/components/TopAboutContacts.vue';
+import WeDesign from '~/components/WeDesign.vue';
+import FlagBlock from '~/components/FlagBlock.vue';
 export default {
-  name: 'top-section'
+  name: 'TopSection',
+  components: { 
+    TopAboutContacts, 
+    WeDesign,
+    FlagBlock,
+  },
 }
 </script>
 
@@ -44,15 +28,8 @@ export default {
 
 <style scoped>
 .top-section {
-    color: var(--White32);
-    min-height: 0;
-    height: 10rem;
-    padding: 0 2.8rem;
-    position: absolute;
-    width: 100%;
-    top: 3.6rem;
-    mix-blend-mode: difference;
-    z-index: 2;
+    margin-top: 0;
+    width: 100vw;
 }
 
 .top-section a { 
@@ -74,9 +51,6 @@ export default {
 .about-cont {
     line-height: 1.6rem;
     margin-top: -1px;
-    position: absolute;
-    left: 18%;
-    z-index: 2;
 }
 
 .about-cont>div:not(:last-child) {
@@ -87,11 +61,13 @@ export default {
     color: var(--Red100);
 }
 
+.top-section-contacts-wrapper {
+  display: flex;
+}
+
 .contacts-top-section,
 .social-top-section {
-  float: right;
   position: relative;
-  z-index: 2;
 }
 
 .contacts-top-section {
@@ -113,13 +89,18 @@ export default {
 
 
 
-@media (max-width: 460px) {
+@media (max-width: 500px) {
   .top-section {
     display: grid;
-    margin-left: .8rem;
-    width: calc(100vw - 1.6rem);
+    min-height: auto;
+    height: auto;
+    width: 100vw;
     top: 0;
-    justify-content: space-between;
+    left: 0;
+    transform: none;
+  }
+  .top-section>.section-inner {
+    flex-direction: column-reverse;
   }
 
   .about-cont {
@@ -130,12 +111,19 @@ export default {
     position: relative;
     z-index: 2;
   }
+  .about-cont>div:not(:last-child) {
+    margin-bottom: 1.2rem;
+  }
+
+  .top-section-contacts-wrapper {
+    justify-content: flex-end;
+  }
 
   .contacts-top-section {
     display: flex;
     grid-column: 2/3;
     grid-row: 1/2;
-    margin: 2.4rem 0 0 0;
+    margin: 2rem 0 0;
     width: calc(12rem + 1.2rem + 14rem);
   }
 
@@ -166,6 +154,7 @@ export default {
 @media (max-width: 330px) {
   .contacts-top-section {
     width: 16.3rem;
+    justify-content: flex-end;
   }
 
   .tel.contacts-top-section-inner {

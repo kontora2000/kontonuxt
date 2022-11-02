@@ -1,26 +1,28 @@
 <template>
     <section class="achievements-cont">
-        <div class="achiev-items-wrapper">
-            <div class="achiev-item">
-                <div class="achiev-digit">10</div>
-                <div class="achiev-text">лет опыта<br />в&nbsp;дизайне <br />и&nbsp;разработке</div>
+        <div class="section-inner">
+            <div class="achiev-items-wrapper">
+                <div class="achiev-item">
+                    <div class="achiev-digit">10</div>
+                    <div class="achiev-text">лет опыта<br />в&nbsp;дизайне <br />и&nbsp;разработке</div>
+                </div>
+                <div class="achiev-item">
+                    <div class="achiev-digit">100</div>
+                    <div class="achiev-text">реализованных<br />проектов</div>
+                </div>
+                <div class="achiev-item">
+                    <div class="achiev-digit">5</div>
+                    <div class="achiev-text">человек<br />в&nbsp;команде</div>
+                </div>
+                <div class="achiev-item">
+                    <div class="achiev-digit">7</div>
+                    <div class="achiev-text">лет<br />в&nbsp;Тибете</div>
+                </div>
             </div>
-            <div class="achiev-item">
-                <div class="achiev-digit">100</div>
-                <div class="achiev-text">реализованных<br />проектов</div>
+            <div class="achiev-about-wrapper">
+                <h4 class="achiev-about-item">Специализируемся на сайтах и&nbsp;приложениях для&nbsp;СМИ и&nbsp;онлайн&hairsp;–&hairsp;коммерции.</h4>
+                <p class="achiev-about-item">Проводим предпроектные исследования и изучаем ваш опыт. С помощью дизайна в первую очередь решаем бизнес-задачи, разрабатываем. И можем подключиться к процессу на любом этапе.</p>
             </div>
-            <div class="achiev-item">
-                <div class="achiev-digit">5</div>
-                <div class="achiev-text">человек<br />в&nbsp;команде</div>
-            </div>
-            <div class="achiev-item">
-                <div class="achiev-digit">7</div>
-                <div class="achiev-text">лет<br />в&nbsp;Тибете</div>
-            </div>
-        </div>
-        <div class="achiev-about-wrapper">
-            <h4 class="achiev-about-item">Специализируемся на сайтах и&nbsp;приложениях для&nbsp;СМИ и&nbsp;онлайн&hairsp;–&hairsp;коммерции.</h4>
-            <p class="achiev-about-item">Проводим предпроектные исследования и изучаем ваш опыт. С помощью дизайна в первую очередь решаем бизнес-задачи, разрабатываем. И можем подключиться к процессу на любом этапе.</p>
         </div>
     </section>
 </template>
@@ -36,11 +38,10 @@ export default {
 
 
 <style scoped>
-.achievements-cont {
-    margin-left: 18%;
-    margin-right: 2.8rem;
-    margin-top: 20rem;
-    min-height: 64vh;
+.achievements-cont {}
+
+.achiev-items-wrapper {
+    position: relative;
 }
 
 .achiev-item {
@@ -66,7 +67,7 @@ export default {
 }
 
 .achiev-text {
-    color: var(--Gray100);
+    color: var(--Black100);
     display: inline-block;
     mix-blend-mode: difference;
     vertical-align: top;
@@ -94,9 +95,8 @@ export default {
     vertical-align: top;
 }
 
-@media (max-width: 460px) {
+@media (max-width: 500px) {
     .achievements-cont {
-        margin-left: .8rem;
         margin-top: 24rem;
     }
 
@@ -133,6 +133,7 @@ export default {
     }
 
     .achiev-about-wrapper {
+        flex-direction: column;
         margin-top: 6rem;
     }
 
@@ -143,10 +144,14 @@ export default {
 
     .achiev-about-item:nth-child(2) {
         margin-top: 2.4rem;
+        max-width: 100%;
     }
 }
 
 @media (max-width: 330px) {
+    .achievements-cont {
+        margin-top: 16rem;
+    }
     .achiev-digit {
         font-size: 9.6rem;
         line-height: 8rem;

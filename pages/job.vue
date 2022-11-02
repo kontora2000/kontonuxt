@@ -1,37 +1,41 @@
 <template>
   <main>
     <section class="page-cont-vacancies page-cont">
-      <NuxtLink to="/" class="link-close-page">
-        <svg class="icon-svg icon-close-svg">
-            <use xlink:href="sprite.svg#icon-close"></use>
-        </svg>
-      </NuxtLink>
+      <div class="section-inner">
+        <NuxtLink to="/" class="link-close-page">
+          <svg class="icon-svg icon-close-svg">
+              <use xlink:href="sprite.svg#icon-close"></use>
+          </svg>
+        </NuxtLink>
 
-      <h1 class="page-section-header">3 вакансии<sup class="page-section-header-sup section-header-sup">Работаем&nbsp;удалённо, помогаем и&nbsp;обучаем, <br class="only-desktop">ценим&nbsp;результат</sup></h1>
+        <h1 class="page-section-header">3 вакансии<sup class="page-section-header-sup section-header-sup">Работаем&nbsp;удалённо, помогаем и&nbsp;обучаем, <br class="only-desktop">ценим&nbsp;результат</sup></h1>
 
-      <div class="vacancies-wrapper">
-        <div class="vacancy-cont">
-            <h4>Аккуратный дизайнер интерфейсов</h4>
-            <p>Создание и развитие CMS для небольших проектов студии. Умение писать понятный код. Понимание оптимизации производительности фреймворка.</p>
-            <p>Вы легко работаете с:<br> PHP, Laravel, Eloquent CMS, Nginx и Apache</p>
-            <a class="vacancy-cont-button-send button" href="mailto:job@prostokontora.ru?subject=Амбициозный дизайнер интерфейсов">Заявить о себе</a>
-        </div>
-        <div class="vacancy-cont">
-            <h4>Педантичный разработчик</h4>
-            <p>Создание и развитие CMS для небольших проектов студии. Умение писать понятный код. Понимание оптимизации производительности фреймворка.</p>
-            <p>Вы легко работаете с:<br> PHP, Laravel, Eloquent CMS, Nginx и Apache</p>
-            <a class="vacancy-cont-button-send button" href="mailto:job@prostokontora.ru?subject=Педантичный разработчик">Откликнуться</a>
-        </div>
-        <div class="vacancy-cont">
-            <h4>Топовый 3Дшник</h4>
-            <p>Создание и развитие CMS для небольших проектов студии. Умение писать понятный код. Понимание оптимизации производительности фреймворка.</p>
-            <p>Вы легко работаете с:<br> PHP, Laravel, Eloquent CMS, Nginx и Apache</p>
-            <a class="vacancy-cont-button-send button" href="mailto:job@prostokontora.ru?subject=Топовый 3Дшник">Отправить резюме</a>
+        <div class="vacancies-wrapper">
+          <div class="vacancy-cont">
+              <h4>Аккуратный дизайнер интерфейсов</h4>
+              <p>Создание и развитие CMS для небольших проектов студии. Умение писать понятный код. Понимание оптимизации производительности фреймворка.</p>
+              <p>Вы легко работаете с:<br> PHP, Laravel, Eloquent CMS, Nginx и Apache</p>
+              <a class="vacancy-cont-button-send button" href="mailto:job@prostokontora.ru?subject=Амбициозный дизайнер интерфейсов">Заявить о себе</a>
+          </div>
+          <div class="vacancy-cont">
+              <h4>Педантичный разработчик</h4>
+              <p>Создание и развитие CMS для небольших проектов студии. Умение писать понятный код. Понимание оптимизации производительности фреймворка.</p>
+              <p>Вы легко работаете с:<br> PHP, Laravel, Eloquent CMS, Nginx и Apache</p>
+              <a class="vacancy-cont-button-send button" href="mailto:job@prostokontora.ru?subject=Педантичный разработчик">Откликнуться</a>
+          </div>
+          <div class="vacancy-cont">
+              <h4>Топовый 3Дшник</h4>
+              <p>Создание и развитие CMS для небольших проектов студии. Умение писать понятный код. Понимание оптимизации производительности фреймворка.</p>
+              <p>Вы легко работаете с:<br> PHP, Laravel, Eloquent CMS, Nginx и Apache</p>
+              <a class="vacancy-cont-button-send button" href="mailto:job@prostokontora.ru?subject=Топовый 3Дшник">Отправить резюме</a>
+          </div>
         </div>
       </div>
     </section>
     <section class="page-cont-vacancies page-cont-vacancies-write-us page-cont">
-      <h2>Если вдруг вы делаете крутые штуки и&nbsp;ищете свою компанию, но&nbsp;тут&nbsp;нет&nbsp;вашей вакансии&nbsp;— напишите нам на&nbsp;<a class="link-underline-solid" href="mailto:job@prostokontora.ru?subject=Хочу с вами работать">job@prostokontora.ru</a></h2>
+      <div class="section-inner">
+        <h2>Если вдруг вы делаете крутые штуки и&nbsp;ищете свою компанию, но&nbsp;тут нет нужной вакансии&nbsp;— напишите нам на&nbsp;<a class="link-underline-solid" href="mailto:job@prostokontora.ru?subject=Хочу с вами работать">job@prostokontora.ru</a></h2>
+      </div>
     </section>
   </main>
 </template>
@@ -61,6 +65,15 @@ export default {
     line-height: 6rem;
 }
 
+.page-cont-vacancies h2 a {
+    color: var(--Black100);
+    border-bottom-color: var(--Black32);
+}
+.page-cont-vacancies h2 a:hover {
+    color: var(--Blue100);
+    border-bottom-color: var(--Blue32);
+}
+
 .page-cont-vacancies>.page-section-header::after {
     display: none;
 }
@@ -88,7 +101,7 @@ export default {
     margin-top: 1.8rem;
 }
 
-@media (max-width: 460px) {
+@media (max-width: 500px) {
   .vacancies-wrapper {
     grid-template-columns: 100%;
     grid-row-gap: 4rem;

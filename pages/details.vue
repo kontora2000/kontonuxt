@@ -1,49 +1,51 @@
 <template>
   <main>
     <section class="page-cont-details page-cont">
-      <NuxtLink to="/" class="link-close-page">
-        <svg class="icon-svg icon-close-svg">
-            <use xlink:href="sprite.svg#icon-close"></use>
-        </svg>
-      </NuxtLink>
+      <div class="section-inner">
+        <NuxtLink to="/" class="link-close-page">
+          <svg class="icon-svg icon-close-svg">
+              <use xlink:href="sprite.svg#icon-close"></use>
+          </svg>
+        </NuxtLink>
 
-      <h1 class="page-section-header">Реквизиты</h1>
+        <h1 class="page-section-header">Реквизиты</h1>
 
-      <div class="details-wrapper">
-        <div class="details-cont">
-            <h4>ООО&thinsp;«Просто контора»</h4>
-            <div class="details-cont-row">
+        <div class="details-wrapper">
+          <div class="details-cont">
+              <h4>ООО&thinsp;«Просто контора»</h4>
+              <div class="details-cont-row">
+                <p>
+                  <span>ИНН</span><br>
+                  <span>2311323463</span>
+                </p>
+                <p>
+                  <span>КПП</span><br>
+                  <span>231101001</span>
+                </p>
+              </div>
               <p>
-                <span>ИНН</span><br>
-                <span>2311323463</span>
+                <span>Расчётный счёт (₽)</span><br>
+                <span>40702810101500102474</span>
               </p>
               <p>
-                <span>КПП</span><br>
-                <span>231101001</span>
+                <span>Название банка</span><br>
+                <span>ТОЧКА ПАО БАНКА «ФК ОТКРЫТИЕ»</span>
               </p>
-            </div>
-            <p>
-              <span>Расчётный счёт (₽)</span><br>
-              <span>40702810101500102474</span>
-            </p>
-            <p>
-              <span>Название банка</span><br>
-              <span>ТОЧКА ПАО БАНКА «ФК ОТКРЫТИЕ»</span>
-            </p>
-            <div class="details-cont-row">
+              <div class="details-cont-row">
+                <p>
+                  <span>Город</span><br>
+                  <span>г. Москва</span>
+                </p>
+                <p>
+                  <span>БИК</span><br>
+                  <span>044525999</span>
+                </p>
+              </div>
               <p>
-                <span>Город</span><br>
-                <span>г. Москва</span>
+                <span>Корр.&nbsp;счёт</span><br>
+                <span>30101810845250000999</span>
               </p>
-              <p>
-                <span>БИК</span><br>
-                <span>044525999</span>
-              </p>
-            </div>
-            <p>
-              <span>Корр.&nbsp;счёт</span><br>
-              <span>30101810845250000999</span>
-            </p>
+          </div>
         </div>
       </div>
     </section>
@@ -84,7 +86,7 @@ export default {
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 4rem;
     grid-row-gap: 10rem;
-    margin-top: 8rem;
+    margin: 8rem 0 12rem;
 }
 
 .details-cont {
@@ -110,10 +112,14 @@ export default {
     left: 30%;
 }
 
-@media (max-width: 460px) {
+@media (max-width: 500px) {
   .details-wrapper {
     grid-template-columns: 100%;
-    margin-top: 3.2rem;
+    margin: 3.2rem 0 6.4rem;
+  }
+
+  .details-cont-row>p:last-child {
+    left: 50%;
   }
 }
 </style>

@@ -1,32 +1,34 @@
 <template>
     <section class="big-contacts-cont">
-        <h1 class="mainpage-section-header">Если захотели <br class="only-desktop"/>связаться с&nbsp;нами&nbsp;:)</h1>
-        <div class="big-contacts-inner">
-            <div class="tel-email-wrapper">
-                <a class="link-tel" href="tel:+79886881488">+7&nbsp;988&nbsp;668-14-88</a>
-                <a class="link-email link-underline-solid" href="mailto:mail@prostokontora.ru">mail@prostokontora.ru</a>
-            </div>
-            <div class="social-links-wrapper">
-                <div class="social-link-wrapper">
-                    <a class="social-link" href="https://t.me/kontoragram">
-                        <svg class="icon-svg icon-telegram-svg">
-                            <use xlink:href="sprite.svg#icon-telegram" />
-                        </svg>
-                    </a>
+        <div class="section-inner">
+            <h1 class="mainpage-section-header">Если захотели <br class="only-desktop"/>связаться с&nbsp;нами&nbsp;:)</h1>
+            <div class="big-contacts-inner">
+                <div class="tel-email-wrapper">
+                    <a class="link-tel" href="tel:+79886881488">+7&nbsp;988&nbsp;668-14-88</a>
+                    <a class="link-email link-underline-solid" href="mailto:mail@prostokontora.ru">mail@prostokontora.ru</a>
                 </div>
-                <div class="social-link-wrapper">
-                    <a class="social-link" href="https://wa.me/79886681488">
-                        <svg class="icon-svg icon-whatsapp-svg">
-                            <use xlink:href="sprite.svg#icon-whatsapp" />
-                        </svg>
-                    </a>
-                </div>
-                <div class="social-link-wrapper">
-                    <a class="social-link" href="https://instagram.com/kontoragram">
-                        <svg class="icon-svg icon-instagram-svg">
-                            <use xlink:href="sprite.svg#icon-instagram" />
-                        </svg>
-                    </a>
+                <div class="social-links-wrapper">
+                    <div class="social-link-wrapper">
+                        <a class="social-link" href="https://t.me/kontoragram">
+                            <svg class="icon-svg icon-telegram-svg">
+                                <use xlink:href="sprite.svg#icon-telegram" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="social-link-wrapper">
+                        <a class="social-link" href="https://wa.me/79886681488">
+                            <svg class="icon-svg icon-whatsapp-svg">
+                                <use xlink:href="sprite.svg#icon-whatsapp" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="social-link-wrapper">
+                        <a class="social-link" href="https://instagram.com/kontoragram">
+                            <svg class="icon-svg icon-instagram-svg">
+                                <use xlink:href="sprite.svg#icon-instagram" />
+                            </svg>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -40,12 +42,9 @@ export default {
 </script>
 
 <style scoped>
-.big-contacts-cont {
-    margin-top: 20rem;
-    margin-left: 18%;
-}
+.big-contacts-cont { }
 
-.big-contacts-cont>.mainpage-section-header::after {
+.big-contacts-cont .mainpage-section-header::after {
     display: none;
 }
 
@@ -111,10 +110,8 @@ export default {
 
 
 
-@media (max-width: 460px) {
-    .big-contacts-cont {
-        margin-left: .8rem;
-    }
+@media (max-width: 500px) {
+    .big-contacts-cont { }
 
     .big-contacts-inner {
         flex-direction: column;

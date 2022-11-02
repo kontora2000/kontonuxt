@@ -1,16 +1,16 @@
 <template>
-  <section class="bg-black-flag">
+  <div class="bg-black-flag">
     <video autoplay loop class="bg-black-flag-video">
       <source type="video/mp4" src="/img/bg-fla.mp4" />
     </video>
-  </section>
+  </div>
 </template>
 
 
 
 <script>
 export default {
-  name: 'FlagSection',
+  name: 'FlagBlock',
 }
 </script>
 
@@ -19,10 +19,12 @@ export default {
 <style scoped>
 .bg-black-flag {
   background-color: var(--Black100);
+  max-width: 100vw;
+  margin: 0;
   position: absolute;
   top: 0;
   right: 0;
-  bottom: 0;
+  bottom: -4rem;
   left: 0;
   z-index: -1;
 }
@@ -32,7 +34,7 @@ export default {
     display: block;
     height: 20rem;
     position: absolute;
-    bottom: 0;
+    bottom: -2px;
     width: 100%;
 }
 
@@ -44,12 +46,16 @@ export default {
 }
 
 
-@media (min-width: 1340px) {}
-
-
-@media (max-width: 460px) {
+@media (min-width: 1340px) {
   .bg-black-flag {
-    bottom: -8rem;
+    max-height: 90vh;
+  }
+}
+
+
+@media (max-width: 500px) {
+  .bg-black-flag {
+    bottom: 0;
     margin-left: 0;
     width: 100vw;
   }
@@ -57,7 +63,7 @@ export default {
 
 @media (max-width: 330px) {
   .bg-black-flag {
-    bottom: -16rem;
+    bottom: -6rem;
   }
 }
 </style>

@@ -1,37 +1,39 @@
 <template>
     <footer>
-        <div v-if="$route.path!=='/' && $route.path!==''" class="contacts contacts-footer">
-            <div class="email-cont contacts-footer-inner">
-                <a class="link-email link-underline-solid" href="mailto:mail@prostokontora.ru">mail@prostokontora.ru</a>
+        <div class="section-inner">
+            <div v-if="$route.path!=='/' && $route.path!==''" class="contacts contacts-footer">
+                <div class="email-cont contacts-footer-inner">
+                    <a class="link-email link-underline-solid" href="mailto:mail@prostokontora.ru">mail@prostokontora.ru</a>
+                </div>
+                <div class="tel contacts-footer-inner"><a href="tel:+79886681488">+7 988 668-14-88</a></div>
             </div>
-            <div class="tel contacts-footer-inner"><a href="tel:+79886681488">+7 988 668-14-88</a></div>
-        </div>
 
-        <div v-if="$route.path!=='/' && $route.path!==''" class="social-links-footer">
-            <div class="social-link-wrapper">
-                <a class="social-link link-underline-solid" href="https://t.me/kontoragram">Telegram</a>
+            <div v-if="$route.path!=='/' && $route.path!==''" class="social-links-footer">
+                <div class="social-link-wrapper">
+                    <a class="social-link link-underline-solid" href="https://t.me/kontoragram">Telegram</a>
+                </div>
+                <div class="social-link-wrapper">
+                    <a class="social-link link-underline-solid" href="https://wa.me/79886681488">WhatsApp</a>
+                </div>
+                <div class="social-link-wrapper">
+                    <a class="social-link link-underline-solid" href="https://kontoragram">Instagram</a>
+                </div>
             </div>
-            <div class="social-link-wrapper">
-                <a class="social-link link-underline-solid" href="https://wa.me/79886681488">WhatsApp</a>
-            </div>
-            <div class="social-link-wrapper">
-                <a class="social-link link-underline-solid" href="https://kontoragram">Instagram</a>
-            </div>
-        </div>
 
-        <div class="vacancies-partnership-cont-footer">
-            <div class="vacancies-partnership-link-wrapper">
-                <NuxtLink to="/job" class="vacancies-partnership-link link-underline-solid">Вакансии</NuxtLink>
+            <div class="vacancies-partnership-cont-footer">
+                <div class="vacancies-partnership-link-wrapper">
+                    <NuxtLink to="/job" class="vacancies-partnership-link link-underline-solid">Вакансии</NuxtLink>
+                </div>
+                <div v-show="false" class="vacancies-partnership-link-wrapper">
+                    <NuxtLink to="/partnership" class="vacancies-partnership-link link-underline-solid">Партнёрка</NuxtLink>
+                </div>
+                <div class="vacancies-partnership-link-wrapper">
+                    <NuxtLink to="/details" class="vacancies-partnership-link link-underline-solid">Реквизиты</NuxtLink>
+                </div>
             </div>
-            <div v-show="false" class="vacancies-partnership-link-wrapper">
-                <NuxtLink to="/partnership" class="vacancies-partnership-link link-underline-solid">Партнёрка</NuxtLink>
-            </div>
-            <div class="vacancies-partnership-link-wrapper">
-                <NuxtLink to="/details" class="vacancies-partnership-link link-underline-solid">Реквизиты</NuxtLink>
-            </div>
-        </div>
 
-        <div class="copyright">©&nbsp;2018&thinsp;–&thinsp;2022</div>
+            <div class="copyright">©&nbsp;2018&thinsp;–&thinsp;2022</div>
+        </div>
     </footer>
 </template>
 
@@ -47,18 +49,23 @@ export default {
 
 <style scoped>
 footer {
-    color: var(--Gray100);
+    color: var(--Black32);
+    margin: 6rem auto 2.4rem;
+    max-width: 1600px;
+}
+
+footer>.section-inner {
     display: grid;
     justify-content: space-between;
-    margin-top: 6rem;
-    padding: 3.2rem 2.8rem 2.4rem 18%;
 }
 
 footer a {
-    color: var(--Gray100);
+    color: var(--Black32);
+    border-bottom-color: var(--Black16);
 }
 footer a:hover {
     color: var(--Black100);
+    border-bottom-color: var(--Black100);
 }
 
 footer div {
@@ -94,37 +101,39 @@ footer div {
 }
 
 
-@media (min-width: 1340px) {}
+@media (min-width: 1340px) {
+
+}
 
 
 
-@media (max-width: 460px) {
+@media (max-width: 500px) {
     footer {
+        margin: 0 0 9.2rem;
+    }
+
+    footer>.section-inner {
         display: grid;
         grid-column-gap: .4rem;
         justify-content: space-between;
-        margin: 0 .8rem;
-        padding: 0 0 2rem;
-        width: calc(100vw - 1.6rem);
     }
 
-    footer>div {
-        display: flex;
-        flex-direction: column;
+    footer>.section-inner>div {
         width: fit-content;
     }
 
-    footer>div:not(:first-child) {
+    footer>.section-inner>div:not(:first-child) {
         margin-left: 0;
     }
 
-    .contacts-footer {
+    footer>.section-inner>.contacts-footer {
         align-content: space-between;
         grid-column: 3/4;
-        grid-row: 1/2;
-        margin-bottom: 1.2rem;
+        grid-row: 1/3;
+        margin-bottom: 1.6rem;
         flex-direction: column-reverse;
         text-align: right;
+        width: 14.4rem;
     }
 
     .contacts-footer-inner:not(:last-child) {
@@ -132,7 +141,7 @@ footer div {
     }
 
     .contacts-footer-inner:first-child {
-        margin-top: 1.2rem;
+        margin-bottom: 1.6rem;
     }
 
     .social-links-footer {
@@ -149,12 +158,14 @@ footer div {
 
     .social-links-footer>.social-link-wrapper:not(:last-child),
     .vacancies-partnership-link-wrapper:not(:last-child) {
-        margin-bottom: 1.2rem;
+        display: flex;
+        margin-bottom: 1.6rem;
         margin-right: 0;
     }
 
     .copyright {
         grid-column: 3/4;
+        grid-row: 3/4;
         justify-self: flex-end;
     }
 }

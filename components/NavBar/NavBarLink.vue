@@ -89,7 +89,7 @@ export default {
 
 .nav-main-link > .link-underline-solid {
   border-bottom-color: var(--White20);
-  border-bottom-width: 3px;
+  border-bottom-width: 4px;
 }
 .nav-main-link:hover > .link-underline-solid {
   border-bottom-color: var(--White100);
@@ -103,11 +103,19 @@ export default {
 @media (min-width: 1340px) {
 }
 
-@media (max-width: 460px) {
+@media (max-width: 500px) {
   .nav-main-link-wrapper {
       font-size: 3.6rem;
       height: 4rem;
       line-height: 4rem;
+  }
+
+  .nav-main-link-wrapper:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+
+  .nav-main-link > .link-underline-solid {
+    border-bottom-width: 2.5px;
   }
 }
 

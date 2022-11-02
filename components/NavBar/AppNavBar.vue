@@ -1,14 +1,14 @@
 <template>
   <div class="nav-main">
     <ul class="nav-main-ul">
-      <navbar-link hash="ident">
-        Айдентику
+      <navbar-link hash="apps">
+        Приложухи
       </navbar-link>
       <navbar-link hash="sites">
         Сайты
       </navbar-link>
-      <navbar-link hash="apps">
-        Приложухи
+      <navbar-link hash="ident">
+        Айдентику
       </navbar-link>
       <navbar-link hash="adv">
         Рекламу
