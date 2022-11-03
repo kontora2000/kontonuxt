@@ -3,7 +3,7 @@
     <nuxt-link
       ref="link"
       :to="hash"
-      :class="{ 'hightlighted': isHightlighted, }"
+      :class="{ 'highlighted': isHighlighted, }"
       class="nav-main-link nav-main-link-grey"
     >
       <span class="link-underline-solid">
@@ -25,12 +25,12 @@ export default {
   },
   data () {
     return {
-      isHightlighted: false,
+      isHighlighted: false,
     }
   },
   mounted () {
     if (this.hash === 'ident') {
-      this.isHightlighted = true
+      this.isHighlighted = true
     }
     if (process.client) {
       this.checkIfWhite()
@@ -47,11 +47,11 @@ export default {
       if (process.client) {
         const pointer = document.querySelector('.mainpage-section-header')
         if (pointer) {
-          const pointerTop = pointer.getBoundingClientRect().top + (pointer.offsetHeight / 2)
+          const pointerTop = pointer.getBoundingClientRect().top + (pointer.offsetHeight / 3)
           const el = this.$refs.link.$el
           const linkTop = el.getBoundingClientRect().top
           const linkBottom = this.$el.getBoundingClientRect().top + this.$el.offsetHeight
-          this.isHightlighted = (pointerTop > linkTop) && (pointerTop < linkBottom)
+          this.isHighlighted = (pointerTop > linkTop) && (pointerTop < linkBottom)
         }
       }
     },
@@ -60,40 +60,41 @@ export default {
 </script>
 
 <style scoped>
-.hightlighted {
-  color: #fff !important;
+.highlighted {
+  color: var(--White100) !important;
 }
 
 .nav-main-link-wrapper {
   color: var(--White100);
   font-size: 6.4rem;
-  height: 6.8rem;
   letter-spacing: -0.02em;
   line-height: 6rem;
   list-style: none;
   mix-blend-mode: difference;
 }
 .nav-main-link-wrapper:not(:last-child) {
-  margin-bottom: 2.4rem;
+  margin-bottom: 2rem;
 }
 
 .nav-main-link {
   color: var(--White100);
-  cursor: pointer;
-  transition: background-color 0.1s linear, border-bottom-color 0.175s linear,
-    color 0.175s linear;
+  cursor: default;
+  /*cursor: pointer;*/
+  transition: background-color 0.1s linear, border-bottom-color 0.12s linear,
+              color 0.12s cubic-bezier(0.4, 0.4, 0.28, 1.2);
 }
-.nav-main-link:hover {
+/*.nav-main-link:hover {
   color: var(--White100);
-}
+}*/
 
 .nav-main-link > .link-underline-solid {
-  border-bottom-color: var(--White20);
+  border-bottom: none;
+  /*border-bottom-color: var(--White20);
   border-bottom-width: 4px;
 }
 .nav-main-link:hover > .link-underline-solid {
   border-bottom-color: var(--White100);
-  color: var(--White100);
+  color: var(--White100);*/
 }
 
 .nav-main-link-grey {

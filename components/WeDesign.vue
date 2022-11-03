@@ -24,18 +24,18 @@ export default {
 <style scoped>
 .we-design {
   margin-top: 4rem;
+  display: flex;
 }
 
 .we-design .mainpage-section-header-wrapper {
     display: inline-block;
-    min-height: 43rem;
     vertical-align: top;
 }
 
 .we-design .mainpage-section-header {
     color: var(--White100);
-    mix-blend-mode: difference;
     line-height: 6rem;
+    mix-blend-mode: difference;
     position: sticky;
     position: -webkit-sticky;
     top: 12rem;

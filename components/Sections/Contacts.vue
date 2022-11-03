@@ -49,19 +49,22 @@ export default {
 }
 
 .big-contacts-inner {
-    margin-top: 12rem;
     display: flex;
+    justify-content: space-between;
+    margin-top: 12rem;
+    width: 100%;
 }
 
 .big-contacts-inner .tel-email-wrapper {
     display: flex;
-    font-size: 2.8rem;
+    font-size: 3.4rem;
     line-height: 3.6rem;
 }
 
 .big-contacts-inner .link-tel {
     color: var(--Black100);
     letter-spacing: -.03em;
+    margin-right: 6.4rem;
 }
 .big-contacts-inner .link-tel:hover {
     color: var(--Blue100);
@@ -72,7 +75,6 @@ export default {
     border-bottom-color: var(--Black16);
     color: var(--Black100);
     letter-spacing: -.02em;
-    margin-left: 4rem;
 }
 .big-contacts-inner .link-email.link-underline-solid:hover {
     border-bottom-color: var(--Blue16);
@@ -81,7 +83,7 @@ export default {
 
 .big-contacts-inner .social-links-wrapper {
     display: flex;
-    margin-left: 12.6rem;
+    margin-left: 8rem;
 }
 
 .big-contacts-inner .social-link-wrapper:not(:last-child) {
@@ -98,7 +100,7 @@ export default {
 
 .big-contacts-inner .social-link .icon-svg>use {
     fill: var(--Black100);
-    transition: fill .174s ease-in-out;
+    transition: fill .12s var(--transition-color-link-button);
 }
 .big-contacts-inner .social-link:hover .icon-svg>use {
     fill: var(--Blue100);
@@ -106,7 +108,14 @@ export default {
 
 
 
-@media (min-width: 1340px) {}
+@media (max-width: 1280px) {
+    .big-contacts-inner .tel-email-wrapper {
+        font-size: 2.8rem;
+        height: 4rem;
+        line-height: 3.6rem;
+        margin-top: .8rem;
+    }
+}
 
 
 

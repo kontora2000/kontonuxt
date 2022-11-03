@@ -40,7 +40,8 @@
 
     --font-default: 'Inter var', sans-serif;
     --font-serif: 'Wremena', 'Times', 'Times New Roman', serif;
-    --font-sweet: 'Nunito', 'Inter var', sans-serif;
+
+    --transition-color-link-button: cubic-bezier(.4,.4,.28,1.2);
 
     --widthxheight1000: calc((100vw - 14.4rem) / 4);
     --widthxheight1340: calc((100vw - 16.4rem) / 5);
@@ -174,7 +175,7 @@ main>section {
 a {
     color: var(--Blue100);
     text-decoration: none;
-    transition: all .1s cubic-bezier(0.4, 0.4, 0.28, 1.2);
+    transition: all .12s var(--transition-color-link-button);
 }
 
 h1,
@@ -368,15 +369,13 @@ button,
     display: inline-block;
     font-size: 2rem;
     padding: 2.4rem;
-    transition: background-color .1s linear,
-                color .1s linear,
-                transform .175s ease-in-out;
+    transition: background-color .12s var(--transition-color-link-button),
+                color .12s var(--transition-color-link-button);
 }
 button:hover,
 .button:hover {
     background-color: var(--Black100);
     color: var(--White100);
-    transform: translateY(-.6rem);
 }
 
 input[type="radio"] {
@@ -466,7 +465,8 @@ video {
 /* Base Transitions */
 
 a {
-    transition: color .175s linear, border-bottom-color .175s linear;
+    transition: color .12s var(--transition-color-link-button),
+                border-bottom-color .12s var(--transition-color-link-button);
 }
 
 

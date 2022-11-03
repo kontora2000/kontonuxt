@@ -41,14 +41,13 @@ export default {
 .achievements-cont {}
 
 .achiev-items-wrapper {
+    display: flex;
+    justify-content: space-between;
     position: relative;
 }
 
 .achiev-item {
     display: inline-flex;
-}
-.achiev-item:not(:last-child) {
-    margin-right: 7.6rem;
 }
 
 .achiev-digit {
@@ -94,6 +93,14 @@ export default {
     max-width: calc(100% - 56rem);
     vertical-align: top;
 }
+
+@media (max-width: 1279px) {
+    .achiev-item:last-child {
+        display: none;
+    }
+}
+
+@media (max-width: 1040px) {}
 
 @media (max-width: 500px) {
     .achievements-cont {
