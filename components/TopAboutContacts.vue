@@ -56,7 +56,7 @@ export default {
     mix-blend-mode: difference;
     width: 100%;
     max-width: 1600px;
-    z-index: 2;
+    z-index: 1;
 }
 
 .top-about-contacts>.section-inner {
@@ -66,37 +66,37 @@ export default {
 
 .top-about-contacts a { 
     color: var(--White32);
-  }
-  .top-about-contacts a:hover {
-      color: var(--White100);
-  }
-  
-  .top-about-contacts a.link-underline-solid,
-  .top-about-contacts a.link-underline-dashed { 
-      border-bottom-color: var(--White20);
-  }
-  .top-about-contacts a.link-underline-solid:hover,
-  .top-about-contacts a.link-underline-dashed:hover { 
-      border-bottom-color: var(--White100);
-  }
-  
-  .about-cont {
-      line-height: 1.6rem;
-      margin-top: -1px;
-  }
-  
-  .about-cont>div:not(:last-child) {
-      margin-bottom: .8rem;
-  }
-  
-  .red-star {
-      color: var(--Red100);
-  }
-  
-  .top-about-contacts-contacts-wrapper {
-    display: flex;
-  }
-  
+}
+.top-about-contacts a:hover {
+    color: var(--White100);
+}
+
+.top-about-contacts a.link-underline-solid,
+.top-about-contacts a.link-underline-dashed { 
+    border-bottom-color: var(--White20);
+}
+.top-about-contacts a.link-underline-solid:hover,
+.top-about-contacts a.link-underline-dashed:hover { 
+    border-bottom-color: var(--White100);
+}
+
+.about-cont {
+    line-height: 1.6rem;
+    margin-top: -1px;
+}
+
+.about-cont>div:not(:last-child) {
+    margin-bottom: .8rem;
+}
+
+.red-star {
+    color: var(--Red100);
+}
+
+.top-about-contacts-contacts-wrapper {
+display: flex;
+}
+
   .contacts-top-about-contacts,
   .social-top-about-contacts {
     position: relative;

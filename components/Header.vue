@@ -27,7 +27,7 @@ header {
     top: 0;
     width: 100%;
     max-width: 1600px;
-    z-index: 1;
+    z-index: 0;
 }
 
 header>div {
