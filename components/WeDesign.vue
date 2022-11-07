@@ -1,10 +1,7 @@
 <template>
   <div class="we-design">
     <div class="mainpage-section-header-wrapper">
-      <h1 class="mainpage-section-header">
-        <!--Делаем приложения, <br />сайты, айдентику, рекламу <br />и&nbsp;контент для&nbsp;соцсетей-->
-        Делаем
-      </h1>
+      <h1 class="mainpage-section-header"><!--Делаем приложения, <br />сайты, айдентику, рекламу <br />и&nbsp;контент для&nbsp;соцсетей-->Делаем</h1>
     </div>
     <AppNavBar />
   </div>
@@ -30,31 +27,29 @@ export default {
 .we-design .mainpage-section-header-wrapper {
     display: inline-block;
     vertical-align: top;
+    z-index: 2;
 }
 
 .we-design .mainpage-section-header {
     color: var(--White100);
     line-height: 6rem;
-    mix-blend-mode: difference;
     position: sticky;
     position: -webkit-sticky;
     top: 12rem;
 }
 .we-design .mainpage-section-header::after {
     background-color: var(--White100);
-    margin-left: 0;
-    width: 15.5rem;
+    width: 12.5rem;
 }
 
-.we-design .nav-main {
-    display: inline-block;
-}
-
-.button-buy-design-wrapper {
-    display: inline-block;
+.we-design-bg-wrapper {
+    width: 68rem;
     position: absolute;
-    top: 18%;
-    right: 6%;
+    height: 38rem;
+    background: #0000ff44;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
 }
 
 @media (min-width: 1340px) {}
@@ -77,7 +72,8 @@ export default {
   }
 
   .we-design .mainpage-section-header::after {
-    margin-right: 0;
+    margin-left: .4rem;
+    margin-right: .4rem;
     width: 4.8rem;
   }
 }
@@ -91,7 +87,6 @@ export default {
     line-height: 3.6rem;
   }
   .we-design .mainpage-section-header::after {
-    margin-left: -.4rem;
     width: 2rem;
   }
 }

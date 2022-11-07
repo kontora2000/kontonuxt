@@ -2,11 +2,11 @@
   <main>
     <TopSection />
     <ButtonOrder />
-    <!--Achievements /-->
+    <Achievements />
     <!--ProjectsSection /-->
     <Clients />
-    <!--ImgOnCursor /-->
-    <!--Team /-->
+    <ImgOnCursor />
+    <Team />
     <Contacts />
   </main>
 </template>

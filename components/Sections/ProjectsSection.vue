@@ -1,15 +1,7 @@
 <template>
   <section class="works-cont">
     <div class="works-wrapper">
-      <h1 class="mainpage-section-header">
-        Сделали
-        <sup class="mainpage-section-header-sup section-header-sup">
-          недавно разработанные
-          <br>решения
-          <span class="mainpage-section-header-sup-span">*</span>
-        </sup>
-      </h1>
-
+      <h1 class="mainpage-section-header">Сделали<sup class="mainpage-section-header-sup section-header-sup">недавно разработанные<br>решения<span class="mainpage-section-header-sup-span">*</span></sup></h1>
       <div class="work-cont work-cont-half">
         <div class="work-pic-cont" />
         <div class="work-name-cont">

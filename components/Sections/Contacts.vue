@@ -129,6 +129,7 @@ export default {
 
     .big-contacts-inner .tel-email-wrapper {
         flex-direction: column;
+        height: auto;
     }
     .big-contacts-inner .link-tel{
         margin-bottom: .8rem;

@@ -34,7 +34,7 @@ export default {
   methods: {
     setImagePosition (e) {
       this.imagePosition = { 
-        left: `${e?.pageX - 40}px`, 
+        left: `${e?.pageX - 200}px`, 
         top: `${e?.pageY - 40}px`, 
       };
     },
@@ -45,19 +45,20 @@ export default {
 <style scoped>
 .img-on-cursor {
    position: absolute;
-   transition: all .06s cubic-bezier(0.42, 0.43, 0.46, 0.87);
-   z-index: -1;
-   tabindex:0;
+   transition: all .24s cubic-bezier(0.82, 0.82, 0.04, 1.76);
+   z-index: 1;
+   tabindex: 0;
 }
 
 .img-on-cursor img {
-  border-radius: 300px;
+  border-radius: 1000px;
   position: relative;
-  max-height: 8rem;
+  max-height: 10rem;
   height: 100%;
-  max-width: 8rem;
+  max-width: 10rem;
   width: 100%;
-  transform: scale(2);
+  transform: scale(3);
+  transition: all .24s ease-in-out;
 }
 
 </style>

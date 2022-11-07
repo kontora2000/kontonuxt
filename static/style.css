@@ -228,7 +228,7 @@ h4 {
     content: '';
     display: inline-block;
     height: .45rem;
-    margin: 0 1.2rem;
+    margin: 0 .8rem;
     position: relative;
     top: -1.6rem;
     width: 10rem;
@@ -368,13 +368,14 @@ button,
     cursor: pointer;
     display: inline-block;
     font-size: 2rem;
-    padding: 2.4rem;
+    line-height: 2.8rem;
+    padding: 1.6rem 2.4rem;
     transition: background-color .12s var(--transition-color-link-button),
                 color .12s var(--transition-color-link-button);
 }
 button:hover,
 .button:hover {
-    background-color: var(--Black100);
+    background-color: var(--Black80);
     color: var(--White100);
 }
 
@@ -614,7 +615,7 @@ a {
 
     .mainpage-section-header::after {
         height: .3rem;
-        margin: 0 .8rem;
+        margin: 0 .4rem;
         top: -.8rem;
         width: calc(100vw - 18rem);
     }
@@ -669,3 +670,71 @@ a {
         height: .25rem;
     }
 }
+
+
+/*! locomotive-scroll v4.1.3 */
+html.has-scroll-smooth {
+    overflow: hidden; }
+  
+  html.has-scroll-dragging {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+  
+  .has-scroll-smooth body {
+    overflow: hidden; }
+  
+  .has-scroll-smooth [data-scroll-container] {
+    min-height: 100vh; }
+  
+  [data-scroll-direction="horizontal"] [data-scroll-container] {
+    height: 100vh;
+    display: inline-block;
+    white-space: nowrap; }
+  
+  [data-scroll-direction="horizontal"] [data-scroll-section] {
+    display: inline-block;
+    vertical-align: top;
+    white-space: nowrap;
+    height: 100%; }
+  
+  .c-scrollbar {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 11px;
+    height: 100%;
+    transform-origin: center right;
+    transition: transform 0.3s, opacity 0.3s;
+    opacity: 0; }
+    .c-scrollbar:hover {
+      transform: scaleX(1.45); }
+    .c-scrollbar:hover, .has-scroll-scrolling .c-scrollbar, .has-scroll-dragging .c-scrollbar {
+      opacity: 1; }
+    [data-scroll-direction="horizontal"] .c-scrollbar {
+      width: 100%;
+      height: 10px;
+      top: auto;
+      bottom: 0;
+      transform: scaleY(1); }
+      [data-scroll-direction="horizontal"] .c-scrollbar:hover {
+        transform: scaleY(1.3); }
+  
+  .c-scrollbar_thumb {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: black;
+    opacity: 0.5;
+    width: 7px;
+    border-radius: 10px;
+    margin: 2px;
+    cursor: -webkit-grab;
+    cursor: grab; }
+    .has-scroll-dragging .c-scrollbar_thumb {
+      cursor: -webkit-grabbing;
+      cursor: grabbing; }
+    [data-scroll-direction="horizontal"] .c-scrollbar_thumb {
+      right: auto;
+      bottom: 0; }

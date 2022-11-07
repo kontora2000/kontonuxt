@@ -1,14 +1,8 @@
 <template>
     <div class="top-about-contacts">
         <div class="about-cont">
-          <div class="about">Топовая команда дизайнеров и&nbsp;разрабов.
-            <br>Разбросаны по&nbsp;всей <span class="red-star">★</span>&hairsp;России, работаем по&nbsp;всему миру
-          </div>
-          <div class="about-vacancies-partnership">
-            Сейчас открыты
-            <nuxt-link class="link-underline-solid" to="/job">3&nbsp;вакансии</nuxt-link><span v-show="false"> и&nbsp;работает
-            <nuxt-link class="link-underline-solid" to="/partnership">партнёрская программа</nuxt-link></span>
-          </div>
+          <div class="about">Топовая команда дизайнеров и&nbsp;разрабов.<br>Разбросаны по&nbsp;всей <span class="red-star">★</span>&hairsp;России, работаем по&nbsp;всему миру</div>
+          <div class="about-vacancies-partnership">Сейчас открыта <NuxtLink class="link-underline-solid" to="/job">1&nbsp;вакансия</NuxtLink><span v-show="false"> и&nbsp;работает <NuxtLink class="link-underline-solid" to="/partnership">партнёрская программа</NuxtLink></span></div>
         </div>
         <div class="top-about-contacts-contacts-wrapper">
           <div class="social-top-about-contacts">

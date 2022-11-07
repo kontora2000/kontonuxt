@@ -1,6 +1,5 @@
 <template>
-  <li class="nav-main-link-wrapper">
-    <nuxt-link
+    <NuxtLink
       ref="link"
       :to="hash"
       :class="{ 'highlighted': isHighlighted, }"
@@ -9,8 +8,7 @@
       <span class="link-underline-solid">
         <slot />
       </span>
-    </nuxt-link>
-  </li>
+    </NuxtLink>
 </template>
 
 <script>
@@ -64,18 +62,6 @@ export default {
   color: var(--White100) !important;
 }
 
-.nav-main-link-wrapper {
-  color: var(--White100);
-  font-size: 6.4rem;
-  letter-spacing: -0.02em;
-  line-height: 6rem;
-  list-style: none;
-  mix-blend-mode: difference;
-}
-.nav-main-link-wrapper:not(:last-child) {
-  margin-bottom: 2rem;
-}
-
 .nav-main-link {
   color: var(--White100);
   cursor: default;
@@ -105,11 +91,6 @@ export default {
 }
 
 @media (max-width: 500px) {
-  .nav-main-link-wrapper {
-      font-size: 3.6rem;
-      height: 4rem;
-      line-height: 4rem;
-  }
 
   .nav-main-link-wrapper:not(:last-child) {
     margin-bottom: 2rem;
@@ -121,16 +102,9 @@ export default {
 }
 
 @media (max-width: 380px) {
-  .nav-main-link-wrapper {
-    font-size: 3.2rem;
-  }
 }
 
 @media (max-width: 330px) {
-  .nav-main-link-wrapper {
-    font-size: 3rem;
-    height: 3.6rem;
-    line-height: 3.6rem;
-  }
+
 }
 </style>

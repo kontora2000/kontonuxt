@@ -4,7 +4,7 @@
       <TopAboutContacts />
       <WeDesign />
     </div>
-      <FlagBlock />
+    <FlagBlock />
   </section>
 </template>
 
@@ -14,6 +14,7 @@
 import TopAboutContacts from '~/components/TopAboutContacts.vue';
 import WeDesign from '~/components/WeDesign.vue';
 import FlagBlock from '~/components/FlagBlock.vue';
+
 export default {
   name: 'TopSection',
   components: { 

@@ -1,7 +1,5 @@
 <template>
-  <div
-    class="player-cont"
-  >
+  <div class="player-cont">
     <picture
       class="player-photo"
       :style="{
@@ -20,9 +18,7 @@
           class="link-underline-solid"
           :href="`https:instagram.com/` + instagramProfile"
           target="_blank"
-        >
-          <slot />
-        </a>
+        ><slot /></a>
       </div>
       <sup class="player-job-title">{{ position }}</sup>
     </div>
@@ -71,3 +67,19 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.player-photo-img {
+  transition: all .16s var(--transition-color-link-button);
+}
+
+.player-name-cont {
+  position: relative;
+}
+.player-name-cont:hover {
+  z-index: 2;
+}
+.player-name .link-underline-solid {
+  border-bottom-width: 1.5px;
+}
+</style>

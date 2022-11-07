@@ -5,7 +5,7 @@
                 <div class="email-cont contacts-footer-inner">
                     <a class="link-email link-underline-solid" href="mailto:mail@prostokontora.ru">mail@prostokontora.ru</a>
                 </div>
-                <div class="tel contacts-footer-inner"><a href="tel:+79886681488">+7 988 668-14-88</a></div>
+                <div class="tel contacts-footer-inner"><a href="tel:+79886681488">+7&nbsp;988&nbsp;668-14-88</a></div>
             </div>
 
             <div v-if="$route.path!=='/' && $route.path!==''" class="social-links-footer">
@@ -16,7 +16,7 @@
                     <a class="social-link link-underline-solid" href="https://wa.me/79886681488">WhatsApp</a>
                 </div>
                 <div class="social-link-wrapper">
-                    <a class="social-link link-underline-solid" href="https://kontoragram">Instagram</a>
+                    <a class="social-link link-underline-solid" href="https://instagram.com/kontoragram">Instagram</a>
                 </div>
             </div>
 

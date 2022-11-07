@@ -21,6 +21,9 @@ export default {
   background-color: var(--Black100);
   max-width: 100vw;
   margin: 0;
+  min-height: 54rem;
+  height: 100%;
+  max-height: 76rem;
   position: absolute;
   top: 0;
   right: 0;
@@ -46,9 +49,9 @@ export default {
 }
 
 
-@media (min-width: 1340px) {
+@media (min-height: 740px) {
   .bg-black-flag {
-    max-height: 90vh;
+    height: 72vh;
   }
 }
 
