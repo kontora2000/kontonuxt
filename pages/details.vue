@@ -34,7 +34,7 @@
               <div class="details-cont-row">
                 <p>
                   <span>Город</span><br>
-                  <span>г. Москва</span>
+                  <span>Москва</span>
                 </p>
                 <p>
                   <span>БИК</span><br>

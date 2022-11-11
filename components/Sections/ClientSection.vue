@@ -2,7 +2,7 @@
   <section class="clients-cont">
     <div class="section-inner">
       <h1 class="mainpage-section-header">Клиенты</h1>
-      <span class="clients-list">Interbunker, FinFort, Zvonok.com, Princess, Ренессанс Страхование, АКБшка.рф, Нескучный сад, Фрутшоп</span>
+      <span class="clients-list">Interbunker, FinFort, Zvonok.com, Princess, Ренессанс Страхование, ОТЭКО, АКБшка.рф, Нескучный сад, Фрутшоп</span>
     </div>
   </section>
 </template>

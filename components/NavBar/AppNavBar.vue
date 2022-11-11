@@ -2,16 +2,16 @@
   <div class="nav-main">
     <ul class="nav-main-ul">
       <li class="nav-main-link-wrapper">
-        <navbar-link hash="apps" class="nav-main-link-apps">
-          Приложухи
-        </navbar-link>
-        <div class="header-bg header-bg-apps"></div>
-      </li>
-      <li class="nav-main-link-wrapper">
         <navbar-link hash="sites" class="nav-main-link-sites">
           Сайты
         </navbar-link>
         <div class="header-bg header-bg-sites"></div>
+      </li>
+      <li class="nav-main-link-wrapper">
+        <navbar-link hash="apps" class="nav-main-link-apps">
+          Приложухи
+        </navbar-link>
+        <div class="header-bg header-bg-apps"></div>
       </li>
       <li class="nav-main-link-wrapper">
         <navbar-link hash="branding" class="nav-main-link-branding">
@@ -65,9 +65,12 @@ export default {
 }
 
 .header-bg {
+  background-size: cover;
+  background-position: 0 0;
+  background-repeat: no-repeat;
   position: absolute;
   width: 800px;
-  height: 420px;
+  height: 64vh;
   top: -10%;
   left: -110%;
   transform: scale(1.2);
@@ -78,8 +81,12 @@ export default {
 }
 
 .header-bg-apps { background: rgb(255, 0, 0); }
-.header-bg-sites { background: #00f; }
-.header-bg-branding { background: #0f0; }
+.header-bg-sites {
+  background-image: url('../../static/img/header-bgs/header-bg-websites-denresp.webp');
+}
+.header-bg-branding {
+  background-image: url('../../static/img/header-bgs/header-bg-branding-akbshka.webp');
+}
 .header-bg-adv { background: #ff0; }
 .header-bg-content { background: #0ff; }
 

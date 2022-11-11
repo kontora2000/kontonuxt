@@ -34,6 +34,7 @@
 
             <div class="copyright">©&nbsp;2018&thinsp;–&thinsp;2022</div>
         </div>
+        <vue-cookie-comply />
     </footer>
 </template>
 
@@ -43,6 +44,16 @@
 export default {
   name: 'Footer',
 }
+
+/*import { createApp } from 'vue'
+import App from './App.vue'
+import VueCookieComply from 'vue-cookie-comply'
+import 'vue-cookie-comply/dist/style.css'
+
+const app = createApp(App)
+
+app.use(VueCookieComply)
+app.mount('#app')*/
 </script>
 
 

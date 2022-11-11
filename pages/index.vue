@@ -5,7 +5,6 @@
     <Achievements />
     <!--ProjectsSection /-->
     <Clients />
-    <ImgOnCursor />
     <Team />
     <Contacts />
   </main>
@@ -19,7 +18,6 @@ import Clients from '~/components/Sections/ClientSection';
 import ProjectsSection from '~/components/Sections/ProjectsSection.vue';
 import Team from '~/components/Sections/TeamSection';
 import Contacts from '~/components/Sections/Contacts';
-import ImgOnCursor from '~/components/ImgOnCursor.vue';
 
 export default {
   components: {
@@ -30,7 +28,6 @@ export default {
     Clients,
     Team,
     Contacts,
-    ImgOnCursor,
   },
 };
 </script>

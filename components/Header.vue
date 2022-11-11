@@ -16,7 +16,6 @@ export default {
 </script>
 
 <style scoped>
-
 header {
     color: var(--White32);
     mix-blend-mode: exclusion;

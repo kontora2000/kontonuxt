@@ -34,7 +34,7 @@ export default {
   methods: {
     setImagePosition (e) {
       this.imagePosition = { 
-        left: `${e?.pageX - 200}px`, 
+        left: `${e?.pageX - 40}px`, 
         top: `${e?.pageY - 40}px`, 
       };
     },

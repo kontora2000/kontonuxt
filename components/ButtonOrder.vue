@@ -8,7 +8,6 @@
 <script>
     export default {
         name: 'ButtonOrder',
-        components: { },
     }
 </script>
 
