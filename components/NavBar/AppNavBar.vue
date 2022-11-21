@@ -5,45 +5,45 @@
         <navbar-link hash="sites" class="nav-main-link-sites">
           Сайты
         </navbar-link>
-        <div class="header-bg header-bg-sites"></div>
+        <div class="header-bg header-bg-sites" />
       </li>
       <li class="nav-main-link-wrapper">
         <navbar-link hash="apps" class="nav-main-link-apps">
           Приложухи
         </navbar-link>
-        <div class="header-bg header-bg-apps"></div>
+        <div class="header-bg header-bg-apps" />
       </li>
       <li class="nav-main-link-wrapper">
         <navbar-link hash="branding" class="nav-main-link-branding">
           Брендинг
         </navbar-link>
-        <div class="header-bg header-bg-branding"></div>
+        <div class="header-bg header-bg-branding" />
       </li>
       <li class="nav-main-link-wrapper">
         <navbar-link hash="adv" class="nav-main-link-adv">
           Рекламу
         </navbar-link>
-        <div class="header-bg header-bg-adv"></div>
+        <div class="header-bg header-bg-adv" />
       </li>
       <li class="nav-main-link-wrapper">
         <navbar-link hash="content" class="nav-main-link-content">
           Контент
         </navbar-link>
-        <div class="header-bg header-bg-content"></div>
+        <div class="header-bg header-bg-content" />
       </li>
     </ul>
   </div>
 </template>
 
 <script>
-import NavbarLink from '~/components/NavBar/NavBarLink'
+import NavbarLink from '~/components/NavBar/NavBarLink';
 
 export default {
   name: 'AppNavBar',
   components: {
     NavbarLink,
   },
-}
+};
 </script>
 
 <style scoped>
@@ -64,7 +64,7 @@ export default {
   margin-bottom: 2rem;
 }
 
-.header-bg {
+/*.header-bg {
   background-size: cover;
   background-position: 0 0;
   background-repeat: no-repeat;
@@ -97,7 +97,7 @@ export default {
 .nav-main-link-content.highlighted + .header-bg-content {
   opacity: .32;
   transform: scale(1);
-}
+}*/
 
 @media (max-width: 500px) {
   .nav-main-link-wrapper {
@@ -112,7 +112,6 @@ export default {
     font-size: 3.2rem;
   }
 }
-
 
 @media (max-width: 330px) {
   .nav-main-link-wrapper {

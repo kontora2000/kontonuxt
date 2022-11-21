@@ -1,47 +1,49 @@
 <template>
-    <div class="top-about-contacts">
-        <div class="about-cont">
-          <div class="about">Топовая команда дизайнеров и&nbsp;разрабов.<br>Разбросаны по&nbsp;всей <span class="red-star">★</span>&hairsp;России, работаем по&nbsp;всему миру</div>
-          <div class="about-vacancies-partnership">Сейчас открыта <NuxtLink class="link-underline-solid" to="/job">1&nbsp;вакансия</NuxtLink><span v-show="false"> и&nbsp;работает <NuxtLink class="link-underline-solid" to="/partnership">партнёрская программа</NuxtLink></span></div>
-        </div>
-        <div class="top-about-contacts-contacts-wrapper">
-          <div class="social-top-about-contacts">
-            <div class="social-top-about-contacts-inner social-link-wrapper">
-              <a class="social-link link-underline-solid" href="https://instagram.com/kontoragram/">Instagram</a>
-            </div>
-            <div class="social-top-about-contacts-inner social-link-wrapper">
-              <a class="social-link link-underline-solid" href="https://t.me/kontoragram">Telegram</a>
-            </div>
-            <div class="social-top-about-contacts-inner social-link-wrapper">
-              <a class="social-link link-underline-solid" href="https://wa.me/79886681488">WhatsApp</a>
-            </div>
-          </div>
-  
-          <div class="contacts contacts-top-about-contacts">
-            <div class="tel contacts-top-about-contacts-inner">
-              <a href="tel:+79886681488">+7&thinsp;988&thinsp;668-14-88</a>
-            </div>
-            <div class="email-cont contacts-top-about-contacts-inner">
-              <a class="link-email link-underline-solid" href="mailto:mail@prostokontora.ru">mail@prostokontora.ru</a>
-            </div>
-          </div>
-        </div>
+  <div class="top-about-contacts">
+    <div class="about-cont">
+      <div class="about">
+        Топовая команда дизайнеров и&nbsp;разрабов.<br>Разбросаны по&nbsp;всей <span class="red-star">★</span>&hairsp;России, работаем по&nbsp;всему миру
+      </div>
+      <div class="about-vacancies-partnership">
+        Сейчас открыта <NuxtLink class="link-underline-solid" to="/job">
+          1&nbsp;вакансия
+        </NuxtLink><span v-show="false"> и&nbsp;работает <NuxtLink class="link-underline-solid" to="/partnership">партнёрская программа</NuxtLink></span>
+      </div>
     </div>
+    <div class="top-about-contacts-contacts-wrapper">
+      <div class="social-top-about-contacts">
+        <div class="social-top-about-contacts-inner social-link-wrapper">
+          <a class="social-link link-underline-solid" href="https://instagram.com/kontoragram/">Instagram</a>
+        </div>
+        <div class="social-top-about-contacts-inner social-link-wrapper">
+          <a class="social-link link-underline-solid" href="https://t.me/kontoragram">Telegram</a>
+        </div>
+        <div class="social-top-about-contacts-inner social-link-wrapper">
+          <a class="social-link link-underline-solid" href="https://wa.me/79886681488">WhatsApp</a>
+        </div>
+      </div>
+  
+      <div class="contacts contacts-top-about-contacts">
+        <div class="tel contacts-top-about-contacts-inner">
+          <a href="tel:+79886681488">+7&thinsp;988&thinsp;668-14-88</a>
+        </div>
+        <div class="email-cont contacts-top-about-contacts-inner">
+          <a class="link-email link-underline-solid" href="mailto:mail@prostokontora.ru">mail@prostokontora.ru</a>
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
-
-
 
 <script>
 export default {
-    name: 'TopAboutContacts'
-}
+  name: 'TopAboutContacts',
+};
 </script>
-
-
 
 <style scoped>
 .top-about-contacts {
-    color: var(--White32);
+    color: var(--White40);
     display: flex;
     justify-content: space-between;
     min-height: 0;
@@ -59,7 +61,7 @@ export default {
 }
 
 .top-about-contacts a { 
-    color: var(--White32);
+    color: var(--White40);
 }
 .top-about-contacts a:hover {
     color: var(--White100);
@@ -109,11 +111,7 @@ display: flex;
     margin-bottom: 1rem;
   }
   
-  
-  
   @media (min-width: 1340px) {}
-  
-  
   
   @media (max-width: 500px) {
     .top-about-contacts {

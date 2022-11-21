@@ -1,14 +1,14 @@
 <template>
-    <div class="button-buy-design-wrapper">
-        <a href="mailto:mail@prostokontora.ru?subject=Контора" class="button-buy-design button">Заказать&nbsp;дизайн</a>
-      <!--<nuxt-link to="/order" class="button-buy-design button">Заказать дизайн</nuxt-link>-->
-    </div>
+  <div class="button-buy-design-wrapper">
+    <a href="mailto:mail@prostokontora.ru?subject=Контора" class="button-buy-design button">Заказать&nbsp;дизайн</a>
+    <!--<nuxt-link to="/order" class="button-buy-design button">Заказать дизайн</nuxt-link>-->
+  </div>
 </template>
 
 <script>
-    export default {
-        name: 'ButtonOrder',
-    }
+export default {
+  name: 'ButtonOrder',
+};
 </script>
 
 <style scoped>
@@ -21,7 +21,7 @@
     z-index: 9;
 }
 .button-buy-design {
-    background: var(--Gray16);
+    background: var(--Gray32);
     color: var(--Black100);
     font-size: 2rem;
     font-weight: 400;

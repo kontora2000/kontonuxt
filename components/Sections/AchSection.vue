@@ -1,45 +1,58 @@
 <template>
-    <section class="achievements-cont">
-        <div class="section-inner">
-            <div class="achiev-items-wrapper">
-                <div class="achiev-item">
-                    <div class="achiev-digit">10</div>
-                    <div class="achiev-text">лет опыта<br />в&nbsp;дизайне <br />и&nbsp;разработке</div>
-                </div>
-                <div class="achiev-item">
-                    <div class="achiev-digit">100</div>
-                    <div class="achiev-text">реализованных<br />проектов</div>
-                </div>
-                <div class="achiev-item">
-                    <div class="achiev-digit">5</div>
-                    <div class="achiev-text">человек<br />в&nbsp;команде</div>
-                </div>
-                <div class="achiev-item">
-                    <div class="achiev-digit">7</div>
-                    <div class="achiev-text">лет<br />в&nbsp;Тибете</div>
-                </div>
-            </div>
-            <div class="achiev-about-wrapper">
-                <h4 class="achiev-about-item">Наш конёк&nbsp;— сложные системы публикации и&nbsp;системы управления онлайн-коммерцией</h4>
-                <div class="achiev-about-item">
-                    <p>Результат нашей работы — решённые бизнес-задачи.</p>
-                    <p>Проведём предпроектные исследования, изучим ваш опыт, выясним какой дизайн принесёт вам больше прибыли и разработаем полезный сайт или приложение.</p>
-                    <p>Можем подключиться к процессу на любом этапе.</p>
-                </div>
-            </div>
+  <section class="achievements-cont">
+    <div class="section-inner">
+      <div class="achiev-items-wrapper">
+        <div class="achiev-item">
+          <div class="achiev-digit">
+            10
+          </div>
+          <div class="achiev-text">
+            лет опыта<br>в&nbsp;дизайне <br>и&nbsp;разработке
+          </div>
         </div>
-    </section>
+        <div class="achiev-item">
+          <div class="achiev-digit">
+            100
+          </div>
+          <div class="achiev-text">
+            реализованных<br>проектов
+          </div>
+        </div>
+        <div class="achiev-item">
+          <div class="achiev-digit">
+            5
+          </div>
+          <div class="achiev-text">
+            человек<br>в&nbsp;команде
+          </div>
+        </div>
+        <div class="achiev-item">
+          <div class="achiev-digit">
+            7
+          </div>
+          <div class="achiev-text">
+            лет<br>в&nbsp;Тибете
+          </div>
+        </div>
+      </div>
+      <div class="achiev-about-wrapper">
+        <h4 class="achiev-about-item">
+          Наш конёк&nbsp;— системы управления онлайн-коммерцией и&nbsp;системы публикации контента. <br>Результат нашей работы&nbsp;— ваши решённые бизнес-задачи
+        </h4>
+        <div class="achiev-about-item">
+          <p>Проведём предпроектные исследования, изучим ваш опыт, выясним какой дизайн принесёт вам больше прибыли и&nbsp;разработаем полезный сайт или&nbsp;приложение.</p>
+          <p>Можем подключиться к&nbsp;процессу на&nbsp;любом этапе.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 </template>
-
-
 
 <script>
 export default {
-  name: 'Achievements'
-}
+  name: 'Achievements',
+};
 </script>
-
-
 
 <style scoped>
 .achievements-cont {}

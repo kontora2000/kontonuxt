@@ -5,7 +5,7 @@
     <Achievements />
     <!--ProjectsSection /-->
     <Clients />
-    <Team />
+    <!--Team / -->
     <Contacts />
   </main>
 </template>
